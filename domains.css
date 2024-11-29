@@ -1,0 +1,406 @@
+.background-orange {
+  /* height: calc(100vh - 126px); */
+  background: linear-gradient(180deg, #FF9533 0%, #FF7B00 100%);
+
+}
+
+section.background-orange div.container {}
+
+section.background-orange div.container div.introduction-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.background-orange div.container div.introduction-container div.introduction-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+  padding: 100px 0;
+}
+
+
+
+section.background-orange div.container div.introduction-container div.introduction-info-container p {
+  color: #fff;
+  margin: 0;
+  font-weight: 500;
+}
+
+section.background-orange div.container div.introduction-container div.introduction-info-container p:first-child {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+
+section.background-orange div.container div.introduction-container div.introduction-info-container p:nth-child(2) {
+  font-size: 48px;
+  max-width: 720px;
+  margin: 0 0 25px 0;
+}
+
+section.background-orange div.container div.introduction-container div.introduction-info-container p:nth-child(3) {
+  font-size: 20px;
+  max-width: 610px;
+  margin: 0 0 50px 0;
+}
+
+
+
+section.background-orange div.container div.introduction-container div.introduction-info-container div.introduction-button {}
+
+section.background-orange div.container div.introduction-container div.introduction-info-container div.introduction-button button {
+  border: none;
+  font-family: "SF Pro Display", sans-serif;
+
+  color: var(--color-dark);
+  font-weight: 500;
+  font-size: 20px;
+  padding: 10px 25px;
+  background-color: #fff;
+}
+
+
+
+section.background-orange div.container div.introduction-container div.background_images {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+section.background-orange div.container div.introduction-container div.background_images div.globus-image {
+  position: absolute;
+  top: 0;
+  left: -65%;
+  z-index: 1;
+  /* width: 1024px; */
+}
+
+section.background-orange div.container div.introduction-container div.background_images div.globus-image img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+
+
+section.background-orange div.container div.introduction-container div.background_images div.search-magnifier {
+  max-width: 400px;
+  position: relative;
+  z-index: 2;
+  height: 760px;
+  display: flex;
+  align-items: center;
+}
+
+section.background-orange div.container div.introduction-container div.background_images div.search-magnifier img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+section.background-blue {
+  background-color: #3393FF;
+}
+
+section.background-blue div.container {}
+
+section.background-blue div.container div.banner-container {
+  position: relative;
+  min-height: 343px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.background-blue div.container div.banner-container div.banner-image {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transform: translateX(-100%);
+}
+
+section.background-blue div.container div.banner-container div.banner-image img {}
+
+
+
+section.background-blue div.container div.banner-container div.banner-info-container {
+  position: relative;
+  z-index: 1;
+}
+
+section.background-blue div.container div.banner-container div.banner-info-container p.banner-info-title {
+  font-weight: bold;
+  font-size: 36px;
+  color: #fff;
+  max-width: 547px;
+}
+
+
+
+section.background-blue div.container div.banner-container div.banner-info-container p.banner-info-description {
+  font-size: 20px;
+  color: #fff;
+  max-width: 681px;
+  margin: 10px 0 30px 0;
+}
+
+
+
+section.background-blue div.container div.banner-container div.banner-info-container div.banner-button-container {}
+
+section.background-blue div.container div.banner-container div.banner-info-container div.banner-button-container a.banner-link {
+  border: none;
+  text-decoration: 0;
+  color: var(--color-dark);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 15px 25px;
+  background-color: #fff;
+}
+
+
+section {}
+
+section div.container {}
+
+section div.container div.domain-container {
+  margin: 80px 0 0 0;
+
+}
+
+section div.container div.domain-container div.domain-input-container {
+}
+
+section div.container div.domain-container div.domain-input-container div.domain-input {
+  display: flex;
+  position: relative;
+  margin: 0 0 50px 0;
+
+}
+
+section div.container div.domain-container div.domain-input-container div.domain-input input {
+  width: 100%;
+  padding: 16px 12px 12px 25px;
+  background-color: var(--color-beige);
+  border: 1px solid #000B261A;
+  color: var(--color-dark);
+}
+
+
+
+section div.container div.domain-container div.domain-input-container div.domain-input div.domain-input-search-input {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+section div.container div.domain-container div.domain-input-container div.domain-input div.domain-input-search-input svg {}
+
+section div.container div.domain-container div.domain-input-container div.domain-input div.domain-input-search-input svg path {}
+
+
+
+section div.container div.domain-container div.domain-input-container ul.domain-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+section div.container div.domain-container div.domain-input-container ul.domain-holder li {
+  padding: 16px 12px 12px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+section div.container div.domain-container div.domain-input-container ul.domain-holder li.unavailable {
+  background-color: #fff;
+  opacity: 50%;
+}
+
+section div.container div.domain-container div.domain-input-container ul.domain-holder li div.domain-holder-name {
+font-weight: 500;
+font-size: 20px;
+color: var(--color-dark);
+}
+
+section div.container div.domain-container div.domain-input-container ul.domain-holder li div.domain-holder-name .discount-number {
+  font-weight: 600;
+  background-color: var(--color-red);
+  color: #fff;
+  padding: 3px 10px;
+  font-size: 14px;
+  border-radius: 25px;
+}
+
+section div.container div.domain-container div.domain-input-container ul.domain-holder li div.domain-holder-name .domain-holder-url-domain {
+  color: var(--color-blue);
+}
+
+
+section div.container div.domain-container div.domain-input-container ul.domain-holder li div.domain-holder-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 13px;
+}
+
+section div.container div.domain-container div.domain-input-container ul.domain-holder li div.domain-holder-actions div.domain-holder-price {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--color-dark)
+}
+
+section div.container div.domain-container div.domain-input-container ul.domain-holder li div.domain-holder-actions div.domain-holder-price::after {
+  content: '\20BD';
+}
+
+section div.container div.domain-container div.domain-input-container ul.domain-holder li div.domain-holder-actions .domain-holder-old-price {
+  font-size: 20px;
+  color: #000B264D;
+  text-decoration: line-through;
+}
+
+section div.container div.domain-container div.domain-input-container ul.domain-holder li div.domain-holder-actions .domain-holder-old-price::after {
+  content: '\20BD';
+}
+
+
+section div.container div.domain-container div.domain-input-container ul.domain-holder li div.domain-holder-actions div.domain-holder-button {
+  padding: 12px 20px;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: var(--color-beige);
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+section div.container div.domain-container div.domain-input-container ul.domain-holder li div.domain-holder-actions div.domain-holder-button:hover {
+  color: #fff;
+  background-color: var(--color-blue);
+}
+
+
+
+section div.container div.domain-container div.domain-input-container div.domain-holder-more {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 60px 0;
+}
+
+section div.container div.domain-container div.domain-input-container div.domain-holder-more button {
+  border: none;
+  padding: 10px 0;
+  background-color: var(--color-beige);
+  color: var(--color-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+section div.container div.domain-container div.domain-input-container div.domain-holder-more button:hover {
+  background-color: #0077fe2e;
+}
+
+
+section div.container div.domain-container div.domain-input-container div.domain-holder-more button span {
+  margin: 0 0 0 5px;
+  color: var(--color-blue);
+}
+
+section div.container div.domain-container div.domain-input-container div.domain-holder-more button span svg {}
+
+section div.container div.domain-container div.domain-input-container div.domain-holder-more button span svg path {}
+
+section {
+
+}
+
+section div.container {
+
+}
+
+section div.container div.domain-catalog {
+
+}
+
+section div.container div.domain-catalog ul.domain-catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 0 25px 0;
+}
+
+section div.container div.domain-catalog ul.domain-catalog-list li.domain-container {
+  display: flex; justify-content: space-between;
+  flex: 1 1 24%;
+  background-color: #fff;
+}
+
+section div.container div.domain-catalog ul.domain-catalog-list li.domain-container div.domain-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px 24px;
+  align-items: center;
+
+}
+
+section div.container div.domain-catalog ul.domain-catalog-list li.domain-container div.domain-col div.domain-name {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--color-dark);
+  background-color: var(--color-beige);
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+
+
+section div.container div.domain-catalog ul.domain-catalog-list li.domain-container div.domain-col div.domain-term {
+  color: var(--color-gray);
+  font-size: 20px;
+  margin: 20px 0 0 0;
+}
+
+.domain-price {
+  font-size: 20px;
+  
+}
+.domain-price::after {
+  content: '\20BD';
+}
+
+
+section div.container div.domain-catalog ul.domain-catalog-list li {
+
+}
+
+section div.container div.domain-catalog ul.domain-catalog-list li a {
+
+}
+
+.domain-link {
+  display: flex;
+  justify-content: center!important;
+  align-items: center;
+}
+
+.domain-link a {
+  color: var(--color-blue);
+  text-decoration: none;
+}
+
+section div.container div.domain-catalog ul.domain-catalog-list li a span {
+
+}
+
