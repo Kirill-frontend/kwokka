@@ -7,6 +7,7 @@
   <title>Kwokka</title>
   <link rel="stylesheet" href="general.css">
   <link rel="stylesheet" href="domains.css">
+  <link rel="stylesheet" href="font.css">
 </head>
 
 <body>
@@ -56,7 +57,7 @@
           </div>
           <div class="aside-nav">
             <ul>
-              <li> <a href="#">Акции</a> </li>
+              <li> <a href="/promotion.html">Акции</a> </li>
               <li> <a href="#"> Помощь </a> </li>
               <li> <a href="#">Связь с нами</a></li>
             </ul>
@@ -100,47 +101,50 @@
           <span></span>
         </div>
         <div class="burger-menu-content">
-          <li> <a href="#">Акции</a> </li>
-          <li> <a href="#"> Помощь </a> </li>
-          <li> <a href="#">Связь с нами</a></li>
-          <li> <a href="/index.html">Хостинги</a> </li>
-          <li class="selected"> <a href="/domains.html">Домены</a></li>
-          <li> <a href="#">Виртуальные сервера</a> </li>
-          <li><a href="#">Личные сервера</a></li>
-          <li>
-            <div class="language-select-container">
-              <div class="flag-icon">
-                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_52_6478)">
-                    <path
-                      d="M12 24.5C18.6274 24.5 24 19.1274 24 12.5C24 5.87258 18.6274 0.5 12 0.5C5.37258 0.5 0 5.87258 0 12.5C0 19.1274 5.37258 24.5 12 24.5Z"
-                      fill="#F0F0F0" />
-                    <path
-                      d="M23.2536 16.6739C23.736 15.3739 24 13.9678 24 12.5C24 11.0322 23.736 9.6261 23.2536 8.32611H0.746391C0.264047 9.6261 0 11.0322 0 12.5C0 13.9678 0.264047 15.3739 0.746391 16.6739L12 17.7174L23.2536 16.6739Z"
-                      fill="#0052B4" />
-                    <path
-                      d="M11.9997 24.5C17.1593 24.5 21.5578 21.2435 23.2533 16.6739H0.746094C2.44161 21.2435 6.84012 24.5 11.9997 24.5Z"
-                      fill="#D80027" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_52_6478">
-                      <rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
-                    </clipPath>
-                  </defs>
-                </svg>
+          <ul>
 
+
+            <li> <a href="/promotion.html">Акции</a> </li>
+            <li> <a href="#"> Помощь </a> </li>
+            <li> <a href="#">Связь с нами</a></li>
+            <li> <a href="/index.html">Хостинги</a> </li>
+            <li class="selected"> <a href="/domains.html">Домены</a></li>
+            <li> <a href="/vds.html">Виртуальные сервера</a> </li>
+            <li><a href="/personal-server.html">Личные сервера</a></li>
+            <li>
+              <div class="language-select-container">
+                <div class="flag-icon">
+                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_52_6478)">
+                      <path
+                        d="M12 24.5C18.6274 24.5 24 19.1274 24 12.5C24 5.87258 18.6274 0.5 12 0.5C5.37258 0.5 0 5.87258 0 12.5C0 19.1274 5.37258 24.5 12 24.5Z"
+                        fill="#F0F0F0" />
+                      <path
+                        d="M23.2536 16.6739C23.736 15.3739 24 13.9678 24 12.5C24 11.0322 23.736 9.6261 23.2536 8.32611H0.746391C0.264047 9.6261 0 11.0322 0 12.5C0 13.9678 0.264047 15.3739 0.746391 16.6739L12 17.7174L23.2536 16.6739Z"
+                        fill="#0052B4" />
+                      <path
+                        d="M11.9997 24.5C17.1593 24.5 21.5578 21.2435 23.2533 16.6739H0.746094C2.44161 21.2435 6.84012 24.5 11.9997 24.5Z"
+                        fill="#D80027" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_52_6478">
+                        <rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                </div>
+                <select name="" id="language-picker"> <!-- TODO сделать кастомный селект -->
+                  <option value="RU">RU</option>
+                </select>
               </div>
-              <select name="" id="language-picker"> <!-- TODO сделать кастомный селект -->
-                <option value="RU">RU</option>
-              </select>
-            </div>
-          </li>
-          <li>
-            <div class="auth-buttons">
-              <button class="btn-dark-outline">Войти в панель</button>
-              <button class="btn-dark">Регистрация</button>
-            </div>
-          </li>
+            </li>
+            <li>
+              <div class="auth-buttons">
+                <button class="btn-dark-outline">Войти в панель</button>
+                <button class="btn-dark">Регистрация</button>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -150,8 +154,8 @@
           <ul>
             <li> <a href="/index.html">Хостинги</a> </li>
             <li class="selected"> <a href="/domains.html">Домены</a></li>
-            <li> <a href="#">Виртуальные сервера</a> </li>
-            <li><a href="#">Личные сервера</a></li>
+            <li> <a href="/vds.html">Виртуальные сервера</a> </li>
+            <li><a href="/personal-server.html">Личные сервера</a></li>
           </ul>
         </nav>
         <div class="call-number">Бесплатный звонок: 8 (900) 600-30-30</div>
@@ -202,7 +206,9 @@
               </div>
               <div class="domain-holder-actions">
                 <div class="domain-holder-price">299</div>
-                <div class="domain-holder-button">Купить</div>
+                <div class="domain-holder-button">
+                  <button> Купить</button>
+                </div>
               </div>
             </li>
             <li class="unavailable">
@@ -221,7 +227,10 @@
               <div class="domain-holder-actions">
                 <div class="domain-holder-old-price">499</div>
                 <div class="domain-holder-price">299</div>
-                <div class="domain-holder-button">Купить</div>
+                <div class="domain-holder-button">
+
+                  <button>Купить</button>
+                </div>
               </div>
             </li>
           </ul>
@@ -532,6 +541,57 @@
     </div>
   </section>
 
+  <div class="modal-container hidden">
+    <div class="modal-content">
+      <div class="modal-content-row">
+        <div class="modal-content-col">
+          <div class="order-details">
+            <div class="order-details-title">Заказ Домена</div>
+            <div class="order-details-tariff-title order-details-text">Доменное имя</div>
+            <div class="order-details-tariff-name order-details-text-black">Example.ru</div>
+            <div class="order-details-system order-details-text-black">SSL Сертификат</div>
+            <div class="order-details-t order-details-text">Бесплатно</div>
+
+            <div class="order-details-price-title">Стоимость</div>
+            <div class="order-details-price">2150 ₽/мес.</div>
+          </div>
+        </div>
+        <div class="modal-content-col">
+          <div class="modal-form">
+            <div class="modal-form-close"><span>&times;</span> </div>
+            <form>
+              <div class="modal-form-title">Аутентификация</div>
+              <div class="modal-form-input">
+                <input type="email" required id="email" placeholder="Example@mail.ru">
+                <label for="email">Электронная почта</label>
+              </div>
+              <div class="modal-form-input">
+                <input type="password" required id="password" placeholder="Введите пароль">
+                <label for="password">Пароль</label>
+              </div>
+              <div class="modal-form-input checkbox">
+                <div class="remember-checkbox">
+                  <input type="checkbox" required id="remember">
+                  <label for="remember">Запомнить меня</label>
+                </div>
+                <a href="#">Забыли пароль</a>
+
+              </div>
+              <div class="modal-form-button">
+                <button>Заказать</button>
+              </div>
+              <div class="modal-form-undertext">
+                Не зарегистрированы? <a href="#">Создать аккаунт</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=" modal-footer">
+    </div>
+  </div>
+
   <footer>
     <div class="container">
 
@@ -654,6 +714,8 @@
       </div>
 
   </footer>
+  <script src="index.js"></script>
+  <script src="domains.js"></script>
 </body>
 
 </html>

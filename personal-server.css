@@ -1,0 +1,231 @@
+.background-blue {
+  /* height: calc(100vh - 126px); */
+  background: linear-gradient(96.28deg, #1A70F0 0%, #3243D5 100%);
+}
+
+section.background-blue div.container {}
+
+section.background-blue div.container div.introduction-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.background-blue div.container div.introduction-container div.introduction-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+}
+
+
+
+section.background-blue div.container div.introduction-container div.introduction-info-container p {
+  color: #fff;
+  margin: 0;
+  font-weight: 500;
+}
+
+section.background-blue div.container div.introduction-container div.introduction-info-container p:first-child {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+
+section.background-blue div.container div.introduction-container div.introduction-info-container p:nth-child(2) {
+  font-size: 48px;
+  max-width: 720px;
+  margin: 0 0 25px 0;
+}
+
+section.background-blue div.container div.introduction-container div.introduction-info-container p:nth-child(3) {
+  font-size: 20px;
+  max-width: 610px;
+  margin: 0 0 50px 0;
+}
+
+
+
+section.background-blue div.container div.introduction-container div.introduction-info-container div.introduction-button {}
+
+section.background-blue div.container div.introduction-container div.introduction-info-container div.introduction-button button {
+  border: none;
+  font-family: "SF Pro Display", sans-serif;
+
+  color: var(--color-dark);
+  font-weight: 500;
+  font-size: 20px;
+  padding: 10px 25px;
+  background-color: #fff;
+}
+
+
+
+section.background-blue div.container div.introduction-container div.background_images {
+  position: relative;
+}
+
+section.background-blue div.container div.introduction-container div.background_images div.globus-image {
+  position: absolute;
+  top: 0;
+  left: -65%;
+  z-index: 1;
+  /* width: 1024px; */
+}
+
+section.background-blue div.container div.introduction-container div.background_images div.globus-image img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+
+
+section.background-blue div.container div.introduction-container div.background_images div.server-image {
+  max-width: 600px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+section.background-blue div.container div.introduction-container div.background_images div.server-image img {
+  max-width: 100%;
+}
+
+section {}
+
+section div.container {}
+
+section div.container div.catalog-container {}
+
+section div.container div.catalog-container div.catalog-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px 25px;
+  margin: 80px 0 25px 0;
+}
+
+section div.container div.catalog-container div.catalog-filters div.catalog-filters-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+section div.container div.catalog-container div.catalog-filters div.catalog-filters-row div.catalog-filter {}
+
+section div.container div.catalog-container div.catalog-filters div.catalog-filters-row div.catalog-filter select {
+  border: none;
+  padding: 12px 40px 12px 12px;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--color-dark);
+  appearance: none;
+  background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.57748 6.91078C3.73376 6.75455 3.94568 6.66679 4.16665 6.66679C4.38762 6.66679 4.59954 6.75455 4.75582 6.91078L9.99998 12.1549L15.2441 6.91078C15.321 6.83119 15.413 6.7677 15.5146 6.72403C15.6163 6.68035 15.7257 6.65737 15.8363 6.6564C15.947 6.65544 16.0567 6.67653 16.1591 6.71843C16.2615 6.76033 16.3546 6.82221 16.4328 6.90045C16.5111 6.97869 16.5729 7.07174 16.6148 7.17415C16.6567 7.27656 16.6778 7.3863 16.6769 7.49695C16.6759 7.6076 16.6529 7.71695 16.6092 7.81862C16.5656 7.92029 16.5021 8.01224 16.4225 8.08911L10.5892 13.9224C10.4329 14.0787 10.221 14.1664 9.99998 14.1664C9.77901 14.1664 9.56709 14.0787 9.41082 13.9224L3.57748 8.08911C3.42126 7.93284 3.3335 7.72092 3.3335 7.49995C3.3335 7.27898 3.42126 7.06705 3.57748 6.91078Z" fill="%23020F30" fill-opacity="0.45"/></svg>') no-repeat 95% var(--color-beige);
+
+
+}
+
+section div.container div.catalog-container div.catalog-filters div.catalog-filters-row div.catalog-filter select#processor {}
+
+section div.container div.catalog-container div.catalog-filters div.catalog-filters-row div.catalog-filter select#processor option {}
+
+
+
+section div.container div.catalog-container div.catalog-filters div.catalog-clear-filters {}
+
+section div.container div.catalog-container div.catalog-filters div.catalog-clear-filters svg {}
+
+section div.container div.catalog-container div.catalog-filters div.catalog-clear-filters svg path {}
+
+
+
+section div.container div.catalog-container div.catalog-servers {
+  margin: 0 0 10px 0;
+}
+
+section div.container div.catalog-container div.catalog-servers div.catalog-server {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 15px 25px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section div.container div.catalog-container div.catalog-servers div.catalog-server div.catalog-server-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+section div.container div.catalog-container div.catalog-servers div.catalog-server div.catalog-server-col div.catalog-server-title {
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--color-dark);
+}
+
+section div.container div.catalog-container div.catalog-servers div.catalog-server div.catalog-server-col div.catalog-server-title svg {}
+
+section div.container div.catalog-container div.catalog-servers div.catalog-server div.catalog-server-col div.catalog-server-desc {
+  width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--color-price-gray);
+}
+
+
+
+section div.container div.catalog-container div.catalog-servers div.catalog-server div.catalog-server-button {}
+
+section div.container div.catalog-container div.catalog-servers div.catalog-server div.catalog-server-button button {
+  border: none;
+  background-color: var(--color-beige);
+  color: var(--color-dark);
+  font-size: 18px;
+  font-weight: 500;
+  padding: 13px 20px;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  font-family: 'SF Pro Display';
+}
+
+section div.container div.catalog-container div.catalog-servers div.catalog-server div.catalog-server-button button:hover {
+  background-color: var(--color-blue);
+  color: #fff;
+}
+
+
+
+section div.container div.catalog-container div.catalog-more {
+  margin: 0 0 150px 0;
+}
+
+section div.container div.catalog-container div.catalog-more button {
+  display: flex;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: 'SF Pro Display';
+  padding: 13px 0;
+}
+
+section div.container div.catalog-container div.catalog-more button:hover {
+  background-color: #0077fe2e;  
+}
+
+section div.container div.catalog-container div.catalog-more button span {}
+
+section div.container div.catalog-container div.catalog-more button span svg {}
+
+section div.container div.catalog-container div.catalog-more button span svg path {}

@@ -98,13 +98,13 @@ section.background-orange div.container div.introduction-container div.backgroun
 }
 
 
-section.background-blue {
+ .background-blue{
   background-color: #3393FF;
 }
 
-section.background-blue div.container {}
 
-section.background-blue div.container div.banner-container {
+
+ div.banner-container {
   position: relative;
   min-height: 343px;
   display: flex;
@@ -112,23 +112,23 @@ section.background-blue div.container div.banner-container {
   justify-content: center;
 }
 
-section.background-blue div.container div.banner-container div.banner-image {
+ div.container div.banner-container div.banner-image {
   position: absolute;
   top: 0;
   left: 100%;
   transform: translateX(-100%);
 }
 
-section.background-blue div.container div.banner-container div.banner-image img {}
+ div.container div.banner-container div.banner-image img {}
 
 
 
-section.background-blue div.container div.banner-container div.banner-info-container {
+ div.container div.banner-container div.banner-info-container {
   position: relative;
   z-index: 1;
 }
 
-section.background-blue div.container div.banner-container div.banner-info-container p.banner-info-title {
+ div.container div.banner-container div.banner-info-container p.banner-info-title {
   font-weight: bold;
   font-size: 36px;
   color: #fff;
@@ -137,7 +137,7 @@ section.background-blue div.container div.banner-container div.banner-info-conta
 
 
 
-section.background-blue div.container div.banner-container div.banner-info-container p.banner-info-description {
+ div.container div.banner-container div.banner-info-container p.banner-info-description {
   font-size: 20px;
   color: #fff;
   max-width: 681px;
@@ -146,9 +146,9 @@ section.background-blue div.container div.banner-container div.banner-info-conta
 
 
 
-section.background-blue div.container div.banner-container div.banner-info-container div.banner-button-container {}
+ div.container div.banner-container div.banner-info-container div.banner-button-container {}
 
-section.background-blue div.container div.banner-container div.banner-info-container div.banner-button-container a.banner-link {
+ div.container div.banner-container div.banner-info-container div.banner-button-container a.banner-link {
   border: none;
   text-decoration: 0;
   color: var(--color-dark);
@@ -270,8 +270,9 @@ section div.container div.domain-container div.domain-input-container ul.domain-
 }
 
 
-section div.container div.domain-container div.domain-input-container ul.domain-holder li div.domain-holder-actions div.domain-holder-button {
+section div.container div.domain-container div.domain-input-container ul.domain-holder li div.domain-holder-actions div.domain-holder-button button {
   padding: 12px 20px;
+  border: none;
   font-weight: 500;
   font-size: 18px;
   background-color: var(--color-beige);
@@ -279,7 +280,7 @@ section div.container div.domain-container div.domain-input-container ul.domain-
   cursor: pointer;
 }
 
-section div.container div.domain-container div.domain-input-container ul.domain-holder li div.domain-holder-actions div.domain-holder-button:hover {
+section div.container div.domain-container div.domain-input-container ul.domain-holder li div.domain-holder-actions div.domain-holder-button button:hover {
   color: #fff;
   background-color: var(--color-blue);
 }

@@ -85,8 +85,7 @@ section.background-blue div.container div.introduction-container div.background_
 section.background-blue div.container div.introduction-container div.background_images div.server-image {
   max-width: 600px;
   position: relative;
-  z-index: 2;
-  height: 760px;
+  z-index: 2;  
   display: flex;
   align-items: center;
 }

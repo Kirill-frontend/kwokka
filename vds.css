@@ -1,0 +1,463 @@
+.background-dark-gr {
+  background: linear-gradient(180deg, #162038 0%, #000B26 100%);
+
+
+}
+
+section.background-dark-gr div.container {}
+
+section.background-dark-gr div.container div.introduction-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.background-dark-gr div.container div.introduction-container div.introduction-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+  padding: 100px 0;
+}
+
+
+
+section.background-dark-gr div.container div.introduction-container div.introduction-info-container p {
+  color: #fff;
+  margin: 0;
+  font-weight: 500;
+}
+
+section.background-dark-gr div.container div.introduction-container div.introduction-info-container p:first-child {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+
+section.background-dark-gr div.container div.introduction-container div.introduction-info-container p:nth-child(2) {
+  font-size: 48px;
+  max-width: 720px;
+  margin: 0 0 25px 0;
+}
+
+section.background-dark-gr div.container div.introduction-container div.introduction-info-container p:nth-child(3) {
+  font-size: 20px;
+  max-width: 610px;
+  margin: 0 0 50px 0;
+}
+
+
+
+section.background-dark-gr div.container div.introduction-container div.introduction-info-container div.introduction-button {}
+
+section.background-dark-gr div.container div.introduction-container div.introduction-info-container div.introduction-button button {
+  border: none;
+  font-family: "SF Pro Display", sans-serif;
+
+  color: var(--color-dark);
+  font-weight: 500;
+  font-size: 20px;
+  padding: 10px 25px;
+  background-color: #fff;
+}
+
+
+
+section.background-dark-gr div.container div.introduction-container div.background_images {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+section.background-dark-gr div.container div.introduction-container div.background_images div.vds-image {
+  width: 290px;
+
+}
+
+section.background-dark-gr div.container div.introduction-container div.background_images div.vds-image img {
+  max-width: 100%;
+
+}
+
+.color-blue {
+  color: var(--color-blue) !important;
+}
+
+
+section {}
+
+section div.container {}
+
+section div.container div.vds-catalog {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 80px 0;
+}
+
+section div.container div.vds-catalog div.vds-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  justify-content: space-between;
+  padding: 15px 25px;
+}
+
+section div.container div.vds-catalog div.vds-item div.vds-region {
+  display: flex;
+  gap: 2px;
+}
+
+section div.container div.vds-catalog div.vds-item div.vds-region div.vds-region-icon {}
+
+section div.container div.vds-catalog div.vds-item div.vds-region div.vds-region-icon svg {}
+
+
+section div.container div.vds-catalog div.vds-item div.vds-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section div.container div.vds-catalog div.vds-item div.vds-stats p {
+  font-weight: 500;
+}
+
+section div.container div.vds-catalog div.vds-item div.vds-stats p:nth-child(1) {
+  font-size: 18px;
+  color: var(--color-dark);
+}
+
+section div.container div.vds-catalog div.vds-item div.vds-stats p:nth-child(2) {
+  font-size: 16px;
+  color: var(--color-gray);
+}
+
+
+
+section div.container div.vds-catalog div.vds-item div.vds-rent-btn {}
+
+section div.container div.vds-catalog div.vds-item div.vds-rent-btn button {
+  border: none;
+  padding: 12px 20px;
+  background-color: var(--color-beige);
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--color-dark);
+  font-family: 'SF Pro Display', sans-serif;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+section div.container div.vds-catalog div.vds-item div.vds-rent-btn button:hover {
+  background-color: var(--color-blue);
+  color: #fff;
+}
+
+section {}
+
+section div.container {}
+
+section div.container div.vds-order {
+  display: flex;
+}
+
+section div.container div.vds-order div.vds-order-texts {
+  background-color: var(--color-dark);
+  padding: 45px;
+  flex: 0 1 35%;
+
+}
+
+section div.container div.vds-order div.vds-order-texts div.vds-order-texts-title {
+  color: #fff;
+  font-weight: bold;
+  font-size: 40px;
+  margin: 0 0 35px 0;
+  max-width: 468px;
+}
+
+
+
+section div.container div.vds-order div.vds-order-texts div.vds-order-texts-description {
+  color: #A6B3D1E5;
+  font-size: 20px;
+  margin: 0 0 100px 0;
+  max-width: 479px;
+}
+
+
+
+section div.container div.vds-order div.vds-order-texts div.vds-order-texts-link {
+  display: flex;
+  align-items: center;
+  color: #3393FF;
+  font-size: 20px;
+
+}
+
+section div.container div.vds-order div.vds-order-texts div.vds-order-texts-link span {
+  display: flex;
+  align-items: center;
+}
+
+section div.container div.vds-order div.vds-order-texts div.vds-order-texts-link span svg {}
+
+section div.container div.vds-order div.vds-order-texts div.vds-order-texts-link span svg path {}
+
+
+
+section div.container div.vds-order div.vds-order-configure {
+  flex: 1 1 50%;
+  background-color: #fff;
+}
+
+section div.container div.vds-order div.vds-order-configure form {
+  padding: 50px;
+}
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-title {
+  font-weight: 600;
+  font-size: 32px;
+  color: var(--color-dark);
+  margin: 0 0 35px 0;
+}
+
+
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-stats {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-stats div.vds-order-form-stats-input {
+  position: relative;
+  margin: 20px 0 0 0;
+}
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-stats div.vds-order-form-stats-input input {
+  border: 1px solid var(--color-border);
+  outline: none;
+  background-color: var(--color-beige);
+  padding: 15px;
+  font-size: 16px;
+}
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-stats div.vds-order-form-stats-input input::after {
+
+}
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-stats div.vds-order-form-stats-input label {
+position: absolute;
+top: 0;
+transform: translateY(-150%);
+left: 0;
+color: var(--color-price-gray);
+}
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-stats div.vds-order-form-stats-input .dimension {  
+  color: var(--color-price-gray);
+  position: absolute;
+  top: 50%;
+  right: 35px;
+  transform: translateY(-50%);
+}
+
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-os {
+  margin: 0 0 40px 0;
+}
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-os input#os-input {}
+
+
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-os label {
+  color: var(--color-price-gray);
+  display: block;
+  margin: 12px 0 5px 0;
+}
+
+
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-os div.selected-os {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-beige);
+  padding: 15px;
+
+
+}
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-os div.selected-os div.selected-os-texts {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-os div.selected-os div.selected-os-texts div.selected-os-icon {}
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-os div.selected-os div.selected-os-texts div.selected-os-icon svg {}
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-os div.selected-os div.selected-os-texts div.selected-os-icon svg path {}
+
+
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-os div.selected-os div.selected-os-texts div.selected-os-name {
+  display: flex;
+  align-items: center;
+}
+
+
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-os div.selected-os div.chevron {}
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-os div.selected-os div.chevron svg {}
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-os div.selected-os div.chevron svg path {}
+
+
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-os div.os-options {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0 0 0;
+  height: 0;
+  transition: all .6s ease-in-out;
+  overflow: hidden;
+}
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-os div.os-options.active {
+  height: 155px;
+}
+
+.chevron {
+  transition: all .6s ease-in-out;
+}
+
+.chevron.active {
+  transform: rotate(180deg);
+}
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-os div.os-options div.os-option.selected {}
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-os div.os-options div.os-option.selected div.os-name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 15px;
+  color: var(--color-price-gray);
+}
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-os div.os-options div.os-option.selected div.selected-os-name svg {}
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-os div.os-options div.os-option.selected div.selected-os-name svg path {}
+
+
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-os div.os-options div.os-option {
+  background-color: var(--color-beige);
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-os div.os-options div.os-option:hover {
+  background-color: #e4ecf5;
+}
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-os div.os-options div.os-option div.os-name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 15px;
+}
+
+
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-term {
+  position: relative;
+}
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-term label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-150%);
+  color: var(--color-price-gray);
+}
+
+
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-term select#term {
+  border: none;  
+  padding: 15px;
+  display: block;
+  width: 100%;
+  outline: none;
+  font-weight: 500;
+  color: var(--color-dark);
+  font-size: 16px;
+  font-family: 'SF Pro Display', sans-serif;
+  appearance: none;
+  background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.57748 6.91078C3.73376 6.75455 3.94568 6.66679 4.16665 6.66679C4.38762 6.66679 4.59954 6.75455 4.75582 6.91078L9.99998 12.1549L15.2441 6.91078C15.321 6.83119 15.413 6.7677 15.5146 6.72403C15.6163 6.68035 15.7257 6.65737 15.8363 6.6564C15.947 6.65544 16.0567 6.67653 16.1591 6.71843C16.2615 6.76033 16.3546 6.82221 16.4328 6.90045C16.5111 6.97869 16.5729 7.07174 16.6148 7.17415C16.6567 7.27656 16.6778 7.3863 16.6769 7.49695C16.6759 7.6076 16.6529 7.71695 16.6092 7.81862C16.5656 7.92029 16.5021 8.01224 16.4225 8.08911L10.5892 13.9224C10.4329 14.0787 10.221 14.1664 9.99998 14.1664C9.77901 14.1664 9.56709 14.0787 9.41082 13.9224L3.57748 8.08911C3.42126 7.93284 3.3335 7.72092 3.3335 7.49995C3.3335 7.27898 3.42126 7.06705 3.57748 6.91078Z" fill="%23020F30" fill-opacity="0.45"/></svg>') no-repeat 98% var(--color-beige);
+}
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-term select#term::after {  
+  display: block;
+  height: 10px;
+  width: 10px;
+}
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-term select#term option {}
+
+
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-final {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  margin: 25px 0 0 0;
+}
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-final div.vds-order-form-price {
+  flex: 1 1 75%;  
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--color-beige);
+}
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-final div.vds-order-form-price p:nth-child(1) {
+  font-weight: 500;
+  color: var(--color-price-gray);
+}
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-final div.vds-order-form-price p:nth-child(2) {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-final div.vds-order-form-buy {
+  flex: 0 0 25%;
+}
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-final div.vds-order-form-buy button {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: var(--color-blue);
+  font-size: 18px;
+  font-weight: 500;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+section div.container div.vds-order div.vds-order-configure form div.vds-order-form-final div.vds-order-form-buy button:hover {
+  background-color: #0a72ea;
+}
