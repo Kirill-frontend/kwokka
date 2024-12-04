@@ -6,9 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kwokka</title>
   <link rel="stylesheet" href="general.css">
-  <link rel="stylesheet" href="domains.css">
+  <link rel="stylesheet" href="help-article.css">
   <link rel="stylesheet" href="font.css">
-  <link rel="stylesheet" href="recover.css">
 </head>
 
 <body>
@@ -59,7 +58,7 @@
           <div class="aside-nav">
             <ul>
               <li> <a href="/promotion.html">Акции</a> </li>
-              <li> <a href="#"> Помощь </a> </li>
+              <li class="selected"> <a href="#"> Помощь </a> </li>
               <li> <a href="/feedback.html">Связь с нами</a></li>
             </ul>
           </div>
@@ -103,13 +102,11 @@
         </div>
         <div class="burger-menu-content">
           <ul>
-
-
             <li> <a href="/promotion.html">Акции</a> </li>
-            <li> <a href="#"> Помощь </a> </li>
+            <li> <a href="/help.html"> Помощь </a> </li>
             <li> <a href="/feedback.html">Связь с нами</a></li>
             <li> <a href="/index.html">Хостинги</a> </li>
-            <li class="selected"> <a href="/domains.html">Домены</a></li>
+            <li> <a href="/domains.html">Домены</a></li>
             <li> <a href="/vds.html">Виртуальные сервера</a> </li>
             <li><a href="/personal-server.html">Личные сервера</a></li>
             <li>
@@ -154,7 +151,7 @@
         <nav>
           <ul>
             <li> <a href="/index.html">Хостинги</a> </li>
-            <li class="selected"> <a href="/domains.html">Домены</a></li>
+            <li> <a href="/domains.html">Домены</a></li>
             <li> <a href="/vds.html">Виртуальные сервера</a> </li>
             <li><a href="/personal-server.html">Личные сервера</a></li>
           </ul>
@@ -163,27 +160,59 @@
       </div>
     </div>
   </header>
+
+
   <main>
-    <div class="container flex-center">
-      <div class="recover-form">
-        <div class="recover-form-title">
-          Восстановление пароля
-        </div>
-        <div class="recover-form-desc">На привязанный к аккаунту номер телефона будет отправлен код подтверждения</div>
-        <div class="recover-form-input">
-          <input type="number" required id="phone" placeholder="+7 (900) 000-00-00">
-          <label for="phone">Номер телефона</label>
-        </div>
-        <div class="recover-form-button">
-          <button>Отправить СМС-код</button>
-        </div>
-        <div class="recover-form-undertext">
-          <a href="#">Нет доступа к номеру телефона?</a>
+    <section>
+      <div class="container">
+        <div class="help-tab-row">
+          <div class="help-tab-nav">
+            <div class="help-tab-nav-title">
+              Начало работы с хостингом
+            </div>
+            <ul class="help-tab-nav-articles">
+              <li class="selected">
+                Регистрация и вход
+              </li>
+              <li> Создание аккаунта </li>
+              <li> Где найти логин и пароль? </li>
+            </ul>
+            <div class="help-tab-article-title">Настройка домена</div>
+            <ul class="help-tab-nav-articles">
+              <li>
+                Привязка домена
+              </li>
+              <li> Установка домена по умолчанию </li>
+            </ul>
+            <div class="help-tab-article-title">Установка сайта на хостинг</div>
+            <ul class="help-tab-nav-articles">
+              <li>
+                Загрузка сайта через FTP-клиент
+              </li>
+              <li> Установка CMS </li>
+            </ul>
+          </div>
+          <div class="help-tab-content">
+            <div class="help-tab-content-main-title">Начало работы с хостингом</div>
+            <div class="help-tab-content-article-title">Регистрация и вход</div>
+            <div class="help-tab-content-article-subtitle">Создание аккаунта</div>
+            <div class="help-tab-content">
+              <div class="help-tab-content-text">
+                Для начала работы на нашем хостинге перейдите на главную страницу и нажмите кнопку «Регистрация».
+                Заполните все поля в форме регистрации: укажите ваш email, создайте надежный пароль и примите условия
+                использования.
+                После успешной регистрации вы получите письмо для подтверждения email.
+              </div>
+              <div class="help-tab-content-img">
+                <img src="images/help-article.png" alt="">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-
+    </section>
   </main>
+
   <footer>
     <div class="container">
 

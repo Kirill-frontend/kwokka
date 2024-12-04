@@ -7,7 +7,6 @@
   --color-beige: #F5F8FB;
   --color-price-gray: #000B26A6;
   --color-red: #FF1640;
-
 }
 
 body {
@@ -361,6 +360,10 @@ header div.container div.top-header div.top-header-item div.aside-nav ul li {
   cursor: pointer;
   font-weight: 500;
   position: relative;
+}
+
+header div.container div.top-header div.top-header-item div.aside-nav ul li.selected a {
+  color: var(--color-blue);
 }
 
 header div.container div.top-header div.top-header-item div.aside-nav ul li a {

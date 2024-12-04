@@ -6,9 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kwokka</title>
   <link rel="stylesheet" href="general.css">
-  <link rel="stylesheet" href="domains.css">
+  <link rel="stylesheet" href="feedback.css">
   <link rel="stylesheet" href="font.css">
-  <link rel="stylesheet" href="recover.css">
 </head>
 
 <body>
@@ -59,8 +58,8 @@
           <div class="aside-nav">
             <ul>
               <li> <a href="/promotion.html">Акции</a> </li>
-              <li> <a href="#"> Помощь </a> </li>
-              <li> <a href="/feedback.html">Связь с нами</a></li>
+              <li> <a href="help.html"> Помощь </a> </li>
+              <li class="selected"> <a href="/feedback.html">Связь с нами</a></li>
             </ul>
           </div>
         </div>
@@ -103,13 +102,11 @@
         </div>
         <div class="burger-menu-content">
           <ul>
-
-
             <li> <a href="/promotion.html">Акции</a> </li>
-            <li> <a href="#"> Помощь </a> </li>
+            <li> <a href="help.html"> Помощь </a> </li>
             <li> <a href="/feedback.html">Связь с нами</a></li>
             <li> <a href="/index.html">Хостинги</a> </li>
-            <li class="selected"> <a href="/domains.html">Домены</a></li>
+            <li> <a href="/domains.html">Домены</a></li>
             <li> <a href="/vds.html">Виртуальные сервера</a> </li>
             <li><a href="/personal-server.html">Личные сервера</a></li>
             <li>
@@ -154,7 +151,7 @@
         <nav>
           <ul>
             <li> <a href="/index.html">Хостинги</a> </li>
-            <li class="selected"> <a href="/domains.html">Домены</a></li>
+            <li> <a href="/domains.html">Домены</a></li>
             <li> <a href="/vds.html">Виртуальные сервера</a> </li>
             <li><a href="/personal-server.html">Личные сервера</a></li>
           </ul>
@@ -163,27 +160,44 @@
       </div>
     </div>
   </header>
+
+
   <main>
-    <div class="container flex-center">
-      <div class="recover-form">
-        <div class="recover-form-title">
-          Восстановление пароля
-        </div>
-        <div class="recover-form-desc">На привязанный к аккаунту номер телефона будет отправлен код подтверждения</div>
-        <div class="recover-form-input">
-          <input type="number" required id="phone" placeholder="+7 (900) 000-00-00">
-          <label for="phone">Номер телефона</label>
-        </div>
-        <div class="recover-form-button">
-          <button>Отправить СМС-код</button>
-        </div>
-        <div class="recover-form-undertext">
-          <a href="#">Нет доступа к номеру телефона?</a>
+    <section>
+      <div class="container flex-center">
+        <div class="feedback-form">
+          <form action="">
+            <div class="feedback-form-title">Связаться с нами</div>
+            <div class="feedback-form-inputs-row">
+              <div class="feedback-form-input">
+                <label for="name">Ваше имя</label>
+                <input type="text" name="name" id="name" placeholder="Александр" required>
+              </div>
+              <div class="feedback-form-input">
+                <label for="name">Электронная почта</label>
+                <input type="email" name="name" id="name" placeholder="Example@mail.ru" required>
+              </div>
+            </div>
+            <div class="feedback-form-input">
+              <label for="topic">Заголовок</label>
+              <input type="text" required name="topic" id="topic" placeholder="Проблема с доменом">
+            </div>
+            <div class="feedback-form-input">
+              <label for="topic-content">Текст письма</label>
+              <textarea name="topic-content" id="topic-content"
+                placeholder="Старайтесь изложить всё в одном сообщени"></textarea>
+            </div>
+            <div class="feedback-form-button">
+              <button>
+                Отправить письмо
+              </button>
+            </div>
+          </form>
         </div>
       </div>
-    </div>
-
+    </section>
   </main>
+
   <footer>
     <div class="container">
 

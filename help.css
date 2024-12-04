@@ -1,0 +1,66 @@
+section {}
+
+section div.container {}
+
+section div.container div.help-title {
+  font-weight: 600;
+  font-size: 40px;
+  color: var(--color-dark);
+  margin: 0 0 32px 0;
+}
+
+
+
+section div.container div.help-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 200px 0;
+}
+
+section div.container div.help-cards div.help-card {
+  background-color: #fff;
+  padding: 26px 36px;
+  flex: 0 0 25%;
+  margin: 20px 0 0 0;
+  gap: 12px;
+}
+
+section div.container div.help-cards div.help-card div.help-card-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 25px 0;
+}
+
+section div.container div.help-cards div.help-card div.help-card-title span.help-card-icon {}
+
+section div.container div.help-cards div.help-card div.help-card-title span.help-card-icon img {}
+
+
+
+section div.container div.help-cards div.help-card div.help-card-title div.help-card-text {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+
+
+section div.container div.help-cards div.help-card ul.help-card-links {}
+
+section div.container div.help-cards div.help-card ul.help-card-links li {
+  margin: 0 0 13px 0;
+}
+
+section div.container div.help-cards div.help-card ul.help-card-links li a {
+  display: flex;
+  align-items: center;
+  color: #020F30CC;
+  font-size: 18px;
+  margin: 0 6px 0 0;
+  text-decoration: none;
+}
+
+section div.container div.help-cards div.help-card ul.help-card-links li a span {}
+
+section div.container div.help-cards div.help-card ul.help-card-links li a span svg {}

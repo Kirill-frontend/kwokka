@@ -1,0 +1,91 @@
+div.feedback-form {
+  padding: 40px;
+  background-color: #fff;
+}
+
+div.feedback-form form {}
+
+div.feedback-form form div.feedback-form-title {
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--color-dark);
+  margin: 0 0 24px 0;
+}
+
+
+
+div.feedback-form form div.feedback-form-inputs-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 12px 0;
+}
+
+div.feedback-form form div.feedback-form-inputs-row div.feedback-form-input {
+  display: flex;
+  flex-direction: column;
+}
+
+div.feedback-form form div.feedback-form-inputs-row div.feedback-form-input input {
+  border: solid 1px var(--color-border);
+  padding: 15px;
+  background-color: var(--color-beige);
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'SF Pro Displays', sans-serif;
+}
+
+div.feedback-form form div.feedback-form-inputs-row div.feedback-form-input label {
+  font-size: 16px;
+  margin: 0 0 10px 0;
+  color: var(--color-price-gray)
+}
+
+div.feedback-form form div.feedback-form-input {
+  display: flex;
+  flex-direction: column;
+}
+
+div.feedback-form form div.feedback-form-input label {
+  font-size: 16px;
+  margin: 10px 0 10px 0;
+  color: var(--color-price-gray)
+}
+
+
+
+div.feedback-form form div.feedback-form-input input {
+  border: solid 1px var(--color-border);
+  padding: 15px;
+  background-color: var(--color-beige);
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'SF Pro Displays', sans-serif;
+}
+
+div.feedback-form form div.feedback-form-input textarea {
+  border: solid 1px var(--color-border);
+  padding: 15px;
+  background-color: var(--color-beige);
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'SF Pro Displays', sans-serif;
+  min-height: 143px;
+}
+
+
+
+div.feedback-form form div.feedback-form-button {
+  margin: 25px 0 0 0;
+}
+
+div.feedback-form form div.feedback-form-button button {
+  width: 100%;
+  padding: 13.5px 0;
+  display: block;
+  border: none;
+  color: #fff;
+  background-color: var(--color-dark);
+  font-weight: 500;
+  font-family: 'SF Pro Display', sans-serif;
+}
