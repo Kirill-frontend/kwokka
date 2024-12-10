@@ -4,19 +4,28 @@ div.background-blue {
 
 div.background-dark {
   background-color: var(--color-dark);
-  flex: 0 0 48%;
+  flex: 0 0 49%;
+  height: 277px;
 }
 
 div.background-orange {
   background-color: #F27A0B;
-  flex: 0 0 48%;
+  flex: 0 0 49%;
+  height: 277px;
+
 }
 
 .orange {
-  left: 107%!important;
-  top: -29px!important;
-  height: 200px;
-  width: 400px;
+  left: 103% !important;
+  top: 5px !important;
+  height: 278px;
+  width: 278px;
+}
+
+.orange-text {
+  max-width: 366px !important;
+  margin: 47px 0 0 16px !important;
+  line-height: 50px;
 }
 
 .orange img {
@@ -29,7 +38,6 @@ div.banner-container {
   min-height: 343px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   overflow: hidden;
 }
 
@@ -42,13 +50,17 @@ div.banner-container div.banner-image {
 
 div.banner-container div.banner-image.dark {
   position: absolute;
-  top: 100px;
-  left: 139%;
+  top: 21px;
+  left: 134%;
   transform: translateX(-100%);
+  height: 257px;
+  overflow: hidden;
 }
 
 .dark-text {
-  margin: 0 0 50px 0;
+  width: 500px;
+  margin: 47px 0 46px 35px !important;
+  line-height: 50px;
 }
 
 div.banner-container div.banner-image img {}
@@ -57,6 +69,7 @@ div.banner-container div.banner-image img {}
   display: flex;
   gap: 20px;
   justify-content: space-between;
+  margin: 20px 0 0 0;
 }
 
 div.banner-container div.banner-info-container {
@@ -69,7 +82,10 @@ div.banner-container div.banner-info-container p.banner-info-title {
   font-weight: bold;
   font-size: 36px;
   color: #fff;
-  max-width: 547px;
+  max-width: 600px;
+  text-transform: uppercase;
+  margin: 57px 0 0 16px;
+  letter-spacing: 1.6px;
 }
 
 
@@ -77,13 +93,17 @@ div.banner-container div.banner-info-container p.banner-info-title {
 div.banner-container div.banner-info-container p.banner-info-description {
   font-size: 20px;
   color: #fff;
-  max-width: 681px;
-  margin: 10px 0 30px 0;
+  max-width: 845px;
+  margin: 18px 0 48px 17px;
+  line-height: 26px;
+  letter-spacing: 1.3px;
 }
 
 
 
-div.banner-container div.banner-info-container div.banner-button-container {}
+div.banner-container div.banner-info-container div.banner-button-container {
+  margin: 45px 0 0 18px;
+}
 
 div.banner-container div.banner-info-container div.banner-button-container a.banner-link {
   border: none;
@@ -93,4 +113,12 @@ div.banner-container div.banner-info-container div.banner-button-container a.ban
   font-weight: 500;
   padding: 15px 25px;
   background-color: #fff;
+  letter-spacing: .5px;
+}
+
+.banner-title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  margin: 125px 0 32px 7px;
 }

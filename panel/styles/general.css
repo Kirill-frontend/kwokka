@@ -1,0 +1,382 @@
+:root {
+  --color-gray: #000B26A6;
+  --color-dark: #000B26;
+  --color-blue: #0077FE1A;
+  --color-red: #DF2E4E;
+  --color-input: #F5F8FB;
+  --color-content-background: #E6EAEE;
+  --color-text-secondary: #586B9599;
+}
+
+body {
+  font-family: 'SF Pro Display', sans-serif !important;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  height: 100%;
+}
+
+main nav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  transition: all .5s ease-in-out;
+  flex: 0 0 273px;
+}
+
+main nav div.nav-top {
+  display: flex;
+  padding: 28px 51px 28px 27.5px;
+  align-items: center;
+}
+
+main nav div.nav-top div.nav-top-burger-bars {
+  margin: 4px 27px 0 2px;
+}
+
+main nav div.nav-top div.nav-top-burger-bars span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: var(--color-gray);
+  margin: 0 0 3px 0;
+}
+
+main nav div.nav-top div.nav-top-burger-bars span:last-child {
+  margin-bottom: 0;
+}
+
+
+
+main nav div.nav-top div.nav-top-logo {
+  display: flex;
+  align-items: center;
+}
+
+main nav div.nav-top div.nav-top-logo div.nav-top-logo-img {
+  width: 35.34px;
+  height: 29.3px;
+}
+
+main nav div.nav-top div.nav-top-logo div.nav-top-logo-img img {
+  max-width: 100%;
+}
+
+
+
+main nav div.nav-top div.nav-top-logo div.nav-top-logo-title {
+  font-family: 'Intern', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  color: var(--color-dark);
+  margin: 0 0 0 5px;
+}
+
+
+
+main nav div.nav-bottom {
+  flex: 1 0 87%;
+  background-color: #FCFCFC;
+  padding: 24px 4px 24px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main nav div.nav-bottom ul.nav-bottom-links {}
+
+main nav div.nav-bottom ul.nav-bottom-links li {}
+
+main nav div.nav-bottom ul.nav-bottom-links li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-dark);
+  padding: 16px 15px;
+  letter-spacing: .7px;
+  margin: 0 0 5px 0;
+  border-radius: 12px;
+  transition: all .4s ease-in-out;
+}
+
+main nav div.nav-bottom ul.nav-bottom-links li a:hover {
+  background-color: var(--color-blue);
+  cursor: pointer;
+}
+
+main nav div.nav-bottom ul.nav-bottom-links li.selected a {
+  background-color: var(--color-blue);
+}
+
+main nav div.nav-bottom ul.nav-bottom-links li a span.nav-bottom-link-icon {}
+
+main nav div.nav-bottom ul.nav-bottom-links li a span.nav-bottom-link-icon svg {}
+
+main nav div.nav-bottom ul.nav-bottom-links li a span.nav-bottom-link-icon svg path {}
+
+
+
+main nav div.nav-bottom ul.nav-bottom-links li a span.nav-bottom-link-text {
+  font-size: 18px;
+  margin: 0 0 0 5px;
+
+}
+
+li {}
+
+li div.dropdown-list {
+  margin: 0 0 4px 0;
+}
+
+li div.dropdown-list div.dropdown-list-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  transition: all .5s ease-in-out;
+
+}
+
+li div.dropdown-list div.dropdown-list-title:hover {
+  background-color: var(--color-blue);
+  cursor: pointer;
+
+}
+
+li div.dropdown-list div.dropdown-list-title div.dropdown-list-texts {
+  display: flex;
+  align-items: center;
+  padding: 16px 15px;
+
+}
+
+li div.dropdown-list div.dropdown-list-title div.dropdown-list-texts span.dropdown-list-icon {}
+
+li div.dropdown-list div.dropdown-list-title div.dropdown-list-texts span.dropdown-list-icon svg {}
+
+
+
+
+li div.dropdown-list div.dropdown-list-title div.dropdown-list-texts span.nav-bottom-link-text {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-dark);
+  letter-spacing: .7px;
+  font-size: 18px;
+  margin: 0 0 5px 4px;
+}
+
+
+
+li div.dropdown-list div.dropdown-list-title div.dropdown-chevron {
+  padding: 0px 24px 2px 0;
+
+}
+
+li div.dropdown-list div.dropdown-list-title div.dropdown-chevron svg {
+  transition: all .3s ease-in-out;
+
+}
+
+
+
+li div.dropdown-list div.dropdown-list-content {
+  padding: 0 0 0 15px;
+  transition: all .5s ease-in-out;
+  max-height: 0px;
+
+  overflow: hidden !important;
+}
+
+
+
+li div.dropdown-list div.dropdown-list-content a {
+  text-decoration: none;
+  color: var(--color-dark);
+
+}
+
+li div.dropdown-list div.dropdown-list-content a span.dropdown-list-content-icon {}
+
+li div.dropdown-list div.dropdown-list-content a span.dropdown-list-content-icon svg {}
+
+
+
+li div.dropdown-list div.dropdown-list-content a span.dropdown-list-content-text {
+  letter-spacing: .7px;
+  margin: 0 0 0 4px;
+}
+
+
+
+
+
+main nav div.nav-bottom div.nav-bottom-logout {
+  padding: 36px 9px;
+}
+
+main nav div.nav-bottom div.nav-bottom-logout button {
+  border: none;
+  background-color: #FCFCFC;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+main nav div.nav-bottom div.nav-bottom-logout button span.nav-bottom-logout-icon {}
+
+main nav div.nav-bottom div.nav-bottom-logout button span.nav-bottom-logout-icon svg {}
+
+
+
+
+main nav div.nav-bottom div.nav-bottom-logout button span.nav-bottom-logout-text {
+  font-size: 18px;
+
+  font-family: 'SF Pro Display', sans-serif;
+}
+
+section {
+  flex: 1;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px;
+}
+
+header div.page-title {
+  padding: 32px 0;
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--color-dark);
+  letter-spacing: 0.4px;
+}
+
+
+
+header div.header-interactions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+header div.header-interactions div.header-interactions-notifications {
+  position: relative;
+  margin: 0 16px 0 0;
+}
+
+header div.header-interactions div.header-interactions-notifications svg {}
+
+
+
+
+header div.header-interactions div.header-interactions-notifications span.header-interactions-notifications-count {
+  position: absolute;
+  top: -4px;
+  left: 45%;
+  font-weight: 500;
+  font-size: 12px;
+  font-family: 'SF UI Display', sans-serif;
+  color: #fff;
+  background-color: var(--color-red);
+  padding: 2px 4px;
+  border-radius: 50%;
+
+}
+
+
+
+header div.header-interactions div.header-interactions-balance {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  background-color: var(--color-input);
+  border-radius: 8px;
+  margin: 0 27px 0 0;
+}
+
+header div.header-interactions div.header-interactions-balance div.header-interactions-balance-deposit {
+  padding: 0px 4px 2px 4px;
+  background-color: #020F3073;
+  border-radius: 50%;
+  color: #fff;
+  margin: 0 2px 0 0;
+}
+
+
+
+header div.header-interactions div.header-interactions-balance span.header-interactions-balance-amount {}
+
+
+
+header div.header-interactions div.header-interactions-balance span.header-interactions-balance-currency {}
+
+
+
+header div.header-interactions div.header-interactions-account {
+  padding: 7px;
+  border-radius: 8px;
+  background-color: var(--color-input);
+}
+
+header div.header-interactions div.header-interactions-account svg {}
+
+header div.header-interactions div.header-interactions-account svg path {}
+
+.main-content {
+  height: 100%;
+  background-color: var(--color-content-background);
+  padding: 48px 34px 0 48px;
+}
+
+section.warning {  
+  padding: 26px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+section.warning div.warning-text {
+  display: flex;
+  align-items: center;
+}
+
+section.warning div.warning-text div.warning-text-icon {
+  margin: 0 12px 0 0;
+}
+
+section.warning div.warning-text div.warning-text-icon svg {}
+
+section.warning div.warning-text div.warning-text-icon svg path {}
+
+
+
+section.warning div.warning-text div.warning-p {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: .5px;
+  color: var(--color-gray);
+}
+
+
+
+section.warning div.warning-button {}
+
+section.warning div.warning-button button.warning-btn {
+  border: none;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: 'SF Pro Display', sans-serif;
+  background-color: #B7C7ED33;
+  color: #586B95;
+}
+

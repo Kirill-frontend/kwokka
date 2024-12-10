@@ -1,6 +1,7 @@
 .background-blue {
   /* height: calc(100vh - 126px); */
   background: linear-gradient(96.28deg, #1A70F0 0%, #3243D5 100%);
+  height: 643px;
 }
 
 section.background-blue div.container {}
@@ -13,7 +14,6 @@ section.background-blue div.container div.introduction-container {
 section.background-blue div.container div.introduction-container div.introduction-info-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   position: relative;
   z-index: 3;
 }
@@ -29,18 +29,25 @@ section.background-blue div.container div.introduction-container div.introductio
 section.background-blue div.container div.introduction-container div.introduction-info-container p:first-child {
   font-size: 24px;
   margin: 0 0 10px 0;
+  text-transform: uppercase;
+  margin: 163px 0 0 5px;
+  letter-spacing: 1.2px;
 }
 
 section.background-blue div.container div.introduction-container div.introduction-info-container p:nth-child(2) {
   font-size: 48px;
-  max-width: 720px;
-  margin: 0 0 25px 0;
+  max-width: 660px;
+  margin: 19px 0 25px 4px;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
 }
 
 section.background-blue div.container div.introduction-container div.introduction-info-container p:nth-child(3) {
   font-size: 20px;
   max-width: 610px;
-  margin: 0 0 50px 0;
+  margin: 9px 0 50px 0;
+  letter-spacing: .4px;
+  line-height: 24px;
 }
 
 
@@ -54,7 +61,7 @@ section.background-blue div.container div.introduction-container div.introductio
   color: var(--color-dark);
   font-weight: 500;
   font-size: 20px;
-  padding: 10px 25px;
+  padding: 15px 33px;
   background-color: #fff;
 }
 
@@ -144,13 +151,16 @@ section div.container div.catalog-container div.catalog-filters div.catalog-clea
 
 section div.container div.catalog-container div.catalog-servers {
   margin: 0 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 section div.container div.catalog-container div.catalog-servers div.catalog-server {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
-  padding: 15px 25px;
+  padding: 8px 9px 8px 33px;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -221,7 +231,7 @@ section div.container div.catalog-container div.catalog-more button {
 }
 
 section div.container div.catalog-container div.catalog-more button:hover {
-  background-color: #0077fe2e;  
+  background-color: #0077fe2e;
 }
 
 section div.container div.catalog-container div.catalog-more button span {}
@@ -229,3 +239,8 @@ section div.container div.catalog-container div.catalog-more button span {}
 section div.container div.catalog-container div.catalog-more button span svg {}
 
 section div.container div.catalog-container div.catalog-more button span svg path {}
+
+
+section div.container div.catalog-container div.catalog-filters div.catalog-filters-row div.catalog-filter select#processor {
+  width: 143px;
+}

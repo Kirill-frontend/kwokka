@@ -1,7 +1,7 @@
 .background-orange {
   /* height: calc(100vh - 126px); */
   background: linear-gradient(180deg, #FF9533 0%, #FF7B00 100%);
-
+  height: 641px;
 }
 
 section.background-orange div.container {}
@@ -14,10 +14,10 @@ section.background-orange div.container div.introduction-container {
 section.background-orange div.container div.introduction-container div.introduction-info-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
   position: relative;
   z-index: 3;
-  padding: 100px 0;
+  padding: 160px 0 0 0;
 }
 
 
@@ -30,19 +30,26 @@ section.background-orange div.container div.introduction-container div.introduct
 
 section.background-orange div.container div.introduction-container div.introduction-info-container p:first-child {
   font-size: 24px;
-  margin: 0 0 10px 0;
+  margin: 6px 0 16px 6px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 section.background-orange div.container div.introduction-container div.introduction-info-container p:nth-child(2) {
   font-size: 48px;
   max-width: 720px;
-  margin: 0 0 25px 0;
+  margin: 0 0 34px 5px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
 }
 
 section.background-orange div.container div.introduction-container div.introduction-info-container p:nth-child(3) {
   font-size: 20px;
   max-width: 610px;
-  margin: 0 0 50px 0;
+  margin: 0 0 53px 0;
+  letter-spacing: .4px;
+  line-height: 23px;
 }
 
 
@@ -56,7 +63,7 @@ section.background-orange div.container div.introduction-container div.introduct
   color: var(--color-dark);
   font-weight: 500;
   font-size: 20px;
-  padding: 10px 25px;
+  padding: 12px 31px;
   background-color: #fff;
 }
 
@@ -84,10 +91,10 @@ section.background-orange div.container div.introduction-container div.backgroun
 
 
 section.background-orange div.container div.introduction-container div.background_images div.search-magnifier {
-  max-width: 400px;
+  max-width: 554px;
   position: relative;
   z-index: 2;
-  height: 760px;
+  height: 627px;
   display: flex;
   align-items: center;
 }
@@ -98,57 +105,64 @@ section.background-orange div.container div.introduction-container div.backgroun
 }
 
 
- .background-blue{
+.background-blue {
   background-color: #3393FF;
+  margin: 0 0 132px 0;
 }
 
 
 
- div.banner-container {
+div.banner-container {
   position: relative;
   min-height: 343px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
- div.container div.banner-container div.banner-image {
+div.container div.banner-container div.banner-image {
   position: absolute;
   top: 0;
   left: 100%;
   transform: translateX(-100%);
 }
 
- div.container div.banner-container div.banner-image img {}
+div.container div.banner-container div.banner-image img {}
 
 
 
- div.container div.banner-container div.banner-info-container {
+div.container div.banner-container div.banner-info-container {
   position: relative;
   z-index: 1;
+  padding: 0 0 0 50px;
 }
 
- div.container div.banner-container div.banner-info-container p.banner-info-title {
+div.container div.banner-container div.banner-info-container p.banner-info-title {
   font-weight: bold;
   font-size: 36px;
   color: #fff;
-  max-width: 547px;
+  max-width: 660px;
+  text-transform: uppercase;
+  margin: 60px 0 0 0;
+  letter-spacing: 2px;
 }
 
 
 
- div.container div.banner-container div.banner-info-container p.banner-info-description {
+div.container div.banner-container div.banner-info-container p.banner-info-description {
   font-size: 20px;
   color: #fff;
-  max-width: 681px;
-  margin: 10px 0 30px 0;
+  max-width: 806px;
+  margin: 23px 0 52px 7px;
+  letter-spacing: .8px;
+  line-height: 24px;
 }
 
 
 
- div.container div.banner-container div.banner-info-container div.banner-button-container {}
+div.container div.banner-container div.banner-info-container div.banner-button-container {}
 
- div.container div.banner-container div.banner-info-container div.banner-button-container a.banner-link {
+div.container div.banner-container div.banner-info-container div.banner-button-container a.banner-link {
   border: none;
   text-decoration: 0;
   color: var(--color-dark);
@@ -164,12 +178,11 @@ section {}
 section div.container {}
 
 section div.container div.domain-container {
-  margin: 80px 0 0 0;
+  margin: 100px 0 0 0;
 
 }
 
-section div.container div.domain-container div.domain-input-container {
-}
+section div.container div.domain-container div.domain-input-container {}
 
 section div.container div.domain-container div.domain-input-container div.domain-input {
   display: flex;
@@ -210,7 +223,7 @@ section div.container div.domain-container div.domain-input-container ul.domain-
 }
 
 section div.container div.domain-container div.domain-input-container ul.domain-holder li {
-  padding: 16px 12px 12px 25px;
+  padding: 12px 12px 12px 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -223,9 +236,9 @@ section div.container div.domain-container div.domain-input-container ul.domain-
 }
 
 section div.container div.domain-container div.domain-input-container ul.domain-holder li div.domain-holder-name {
-font-weight: 500;
-font-size: 20px;
-color: var(--color-dark);
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--color-dark);
 }
 
 section div.container div.domain-container div.domain-input-container ul.domain-holder li div.domain-holder-name .discount-number {
@@ -290,7 +303,7 @@ section div.container div.domain-container div.domain-input-container ul.domain-
 section div.container div.domain-container div.domain-input-container div.domain-holder-more {
   display: flex;
   justify-content: center;
-  margin: 20px 0 60px 0;
+  margin: 55px 0 60px 0;
 }
 
 section div.container div.domain-container div.domain-input-container div.domain-holder-more button {
@@ -306,6 +319,8 @@ section div.container div.domain-container div.domain-input-container div.domain
   font-weight: 500;
   transition: all .3s ease-in-out;
   cursor: pointer;
+  gap: 25px;
+  font-family: 'SF Pro Display', sans-serif;
 }
 
 section div.container div.domain-container div.domain-input-container div.domain-holder-more button:hover {
@@ -322,17 +337,11 @@ section div.container div.domain-container div.domain-input-container div.domain
 
 section div.container div.domain-container div.domain-input-container div.domain-holder-more button span svg path {}
 
-section {
+section {}
 
-}
+section div.container {}
 
-section div.container {
-
-}
-
-section div.container div.domain-catalog {
-
-}
+section div.container div.domain-catalog {}
 
 section div.container div.domain-catalog ul.domain-catalog-list {
   display: flex;
@@ -342,7 +351,8 @@ section div.container div.domain-catalog ul.domain-catalog-list {
 }
 
 section div.container div.domain-catalog ul.domain-catalog-list li.domain-container {
-  display: flex; justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   flex: 1 1 24%;
   background-color: #fff;
 }
@@ -375,33 +385,37 @@ section div.container div.domain-catalog ul.domain-catalog-list li.domain-contai
 
 .domain-price {
   font-size: 20px;
-  
+
 }
+
 .domain-price::after {
   content: '\20BD';
 }
 
 
-section div.container div.domain-catalog ul.domain-catalog-list li {
+section div.container div.domain-catalog ul.domain-catalog-list li {}
 
-}
-
-section div.container div.domain-catalog ul.domain-catalog-list li a {
-
-}
+section div.container div.domain-catalog ul.domain-catalog-list li a {}
 
 .domain-link {
   display: flex;
-  justify-content: center!important;
+  justify-content: center !important;
   align-items: center;
 }
 
 .domain-link a {
   color: var(--color-blue);
   text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: 'SF Pro Display', sans-serif;
 }
 
-section div.container div.domain-catalog ul.domain-catalog-list li a span {
+section div.container div.domain-catalog ul.domain-catalog-list li a span {}
+
+.domain-www-icon {
+  position: relative;
+  top: -6px;
+  left: 16px;
 
 }
-

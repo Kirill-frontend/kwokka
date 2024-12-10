@@ -1,0 +1,122 @@
+section .service-container {}
+
+.service-container {
+  background-color: #fff;
+  padding: 20px 20px 10px 26px;
+  margin: 25px 0 0 0;
+  border-radius: 12px;
+
+}
+
+section .service-container div.service-header {
+
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 12px 0;
+}
+
+section .service-container div.service-header div.service-title {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+section .service-container div.service-header div.service-title svg {
+  margin: 0 6px 0 0;
+}
+
+section .service-container div.service-header div.service-title svg path {}
+
+
+
+section .service-container div.service-header div.service-chevron {}
+
+section .service-container div.service-header div.service-chevron svg {}
+
+section .service-container div.service-header div.service-chevron svg path {}
+
+
+
+section .service-container div.service-content {
+  background-color: #F7F9FC;
+  padding: 24px 24px;
+  display: flex;
+  gap: 12px;
+  position: relative;
+}
+
+section .service-container div.service-content div.service-item {
+  padding: 22px 20px 20px 23px;
+
+  background-color: #fff;
+  border-radius: 12px;
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+}
+
+section .service-container div.service-content div.service-item div.service-item-title {
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--color-dark);
+  margin: 0 0 12px 0;
+
+}
+
+
+
+section .service-container div.service-content div.service-item div.service-item-price {
+  font-size: 18px;
+  color: var(--color-text-secondary);
+  margin: 0 0 85px 0;
+}
+
+
+
+section .service-container div.service-content div.service-item div.service-item-tariff-name {
+  color: var(--color-text-secondary);
+  font-size: 18px;
+}
+
+
+
+section .service-container div.service-content div.service-item-add {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 12px;
+  font-size: 72px;
+  color: var(--color-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+section .service-container div.service-content div.service-background-image {
+  position: absolute;
+  top: 0;
+  left: 60%;
+  opacity: .4;
+}
+
+section .service-container div.service-content div.service-background-image img {}
+
+.service-item-server-status {
+  color: #3CC87D;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.service-item-server-status span {
+  display: block;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #3CC87D;
+}

@@ -4,6 +4,7 @@ header {}
 .background-blue {
   /* height: calc(100vh - 126px); */
   background: linear-gradient(180deg, #3393FF 0%, #2383EF 100%);
+  height: 640px;
 }
 
 section.background-blue div.container {}
@@ -32,18 +33,28 @@ section.background-blue div.container div.introduction-container div.introductio
 section.background-blue div.container div.introduction-container div.introduction-info-container p:first-child {
   font-size: 24px;
   margin: 0 0 10px 0;
+  text-transform: uppercase;
+  padding: 20px 0 0 5px;
+  letter-spacing: 1px;
+
 }
 
 section.background-blue div.container div.introduction-container div.introduction-info-container p:nth-child(2) {
   font-size: 48px;
   max-width: 720px;
   margin: 0 0 25px 0;
+  text-transform: uppercase;
+  padding: 13px 0 0 6px;
+  letter-spacing: 3px;
+  line-height: 52px;
+
 }
 
 section.background-blue div.container div.introduction-container div.introduction-info-container p:nth-child(3) {
   font-size: 20px;
   max-width: 610px;
-  margin: 0 0 50px 0;
+  margin: 0 0 20px 0;
+  padding: 10px 0 0 6px;
 }
 
 
@@ -53,12 +64,13 @@ section.background-blue div.container div.introduction-container div.introductio
 section.background-blue div.container div.introduction-container div.introduction-info-container div.introduction-button button {
   border: none;
   font-family: "SF Pro Display", sans-serif;
-
   color: var(--color-dark);
   font-weight: 500;
   font-size: 20px;
-  padding: 10px 25px;
+  padding: 14px 28px;
   background-color: #fff;
+  margin: 16px 0 0 3px;
+  letter-spacing: .4px;
 }
 
 
@@ -85,9 +97,11 @@ section.background-blue div.container div.introduction-container div.background_
 section.background-blue div.container div.introduction-container div.background_images div.server-image {
   max-width: 600px;
   position: relative;
-  z-index: 2;  
+  z-index: 2;
   display: flex;
   align-items: center;
+  left: 55px;
+  top: 22px;
 }
 
 section.background-blue div.container div.introduction-container div.background_images div.server-image img {
@@ -102,6 +116,7 @@ section div.container div.tariffs-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0 0 0 9px;
 }
 
 section div.container div.tariffs-container div.tariff {
@@ -110,6 +125,7 @@ section div.container div.tariffs-container div.tariff {
   background-color: #fff;
   margin: 80px 0 200px 0;
   padding: 25px;
+  width: 352px;
 }
 
 section div.container div.tariffs-container div.tariff p.tariff-title {
@@ -200,7 +216,7 @@ section div.container div.tariffs-container div.tariff div.price-container {}
 section div.container div.tariffs-container div.tariff div.price-container p.price-info-text {
   font-weight: 500;
   color: var(--color-dark);
-  margin: 0 0 10px 0;
+  margin: 27px 0 10px 0px;
 }
 
 
@@ -267,6 +283,7 @@ section div.container div.tariffs-container div.tariff div.price-container div.t
   padding: 15px 0;
   cursor: pointer;
   transition: all .3s ease-in-out;
+  margin: 9px 0 0 7px;
 }
 
 section div.container div.tariffs-container div.tariff div.price-container div.tariff-button button:hover {
@@ -295,9 +312,10 @@ section div.container div.benefits-container div.benefits-title-container {
 
 section div.container div.benefits-container div.benefits-title-container div.benefits-title-text {
   font-weight: 600;
-  font-size: 28px;
+  font-size: 20px;
   color: var(--color-dark);
-  margin: 0 0 20px 0;
+  margin: 7px 0 20px 8px;
+  letter-spacing: .4px;
 }
 
 
@@ -310,6 +328,9 @@ section div.container div.benefits-container div.benefits-description-container 
 section div.container div.benefits-container div.benefits-description-container p.benefits-description-text {
   color: var(--color-price-gray);
   max-width: 430px;
+  line-height: 21px;
+  padding: 0 0 0 7px;
+  letter-spacing: .6px;
 }
 
 section div.container div.benefits-row {
@@ -318,7 +339,7 @@ section div.container div.benefits-row {
 }
 
 section div.container div.benefits-row:last-child {
-  margin: 20px 0 50px 0;
+  margin: 20px 0 42px 0;
 }
 
 section.background-black {
@@ -332,7 +353,8 @@ section.background-black div.container div.banner-container {
   min-height: 343px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding: 54px 0 0 56px;
+
 }
 
 section.background-black div.container div.banner-container div.banner-image {
@@ -353,6 +375,9 @@ section.background-black div.container div.banner-container div.banner-info-cont
   font-size: 36px;
   color: #fff;
   max-width: 547px;
+  text-transform: uppercase;
+  line-height: 44px;
+  letter-spacing: .6px;
 }
 
 
@@ -362,11 +387,15 @@ section.background-black div.container div.banner-container div.banner-info-cont
   color: #A6B3D1;
   max-width: 681px;
   margin: 10px 0 30px 0;
+  letter-spacing: 0.6px;
+  line-height: 33px;
 }
 
 
 
-section.background-black div.container div.banner-container div.banner-info-container div.banner-button-container {}
+section.background-black div.container div.banner-container div.banner-info-container div.banner-button-container {
+  margin: 43px 0 0 1px;
+}
 
 section.background-black div.container div.banner-container div.banner-info-container div.banner-button-container a.banner-link {
   border: none;
@@ -376,6 +405,7 @@ section.background-black div.container div.banner-container div.banner-info-cont
   font-weight: 500;
   padding: 15px 25px;
   background-color: #fff;
+  letter-spacing: .4px;
 }
 
 section {}
@@ -383,18 +413,23 @@ section {}
 section div.container {}
 
 section div.container div.specification-container {
-  margin: 400px 0 0 0;
+  margin: 317px 0 463px 26px;
 }
 
 section div.container div.specification-container div.specification-item {
   display: flex;
   justify-content: space-between;
-  margin: 0 0 200px 0;
+  margin: 0 0 245px 0;
 }
 
 section div.container div.specification-container div.specification-item.reverse {
   flex-direction: row-reverse;
 }
+
+section div.container div.specification-container div.specification-item.reverse div.specification-texts {
+  padding: 45px 24px 0 0;
+}
+
 
 section div.container div.specification-container div.specification-item div.specification-texts {
   padding: 45px 0 0 0;
@@ -404,7 +439,8 @@ section div.container div.specification-container div.specification-item div.spe
   font-weight: 500;
   font-size: 32px;
   color: var(--color-dark);
-  margin: 0 0 30px 0;
+  margin: 0 0 44px 0;
+  letter-spacing: .4px;
 }
 
 
@@ -437,6 +473,7 @@ section div.container div.specification-container div.specification-item div.spe
   font-weight: 500;
   font-size: 24px;
   margin: 0 0 5px 0;
+  letter-spacing: .4px;
 
 }
 
@@ -446,6 +483,8 @@ section div.container div.specification-container div.specification-item div.spe
   font-size: 18px;
   color: var(--color-gray);
   max-width: 568px;
+  letter-spacing: .3px;
+  line-height: 26px;
 }
 
 
@@ -477,5 +516,3 @@ section div.container div.specification-container div.specification-item div.spe
 section div.container div.specification-container div.specification-item div.specification-image img {
   max-width: 100%;
 }
-
-

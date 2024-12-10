@@ -7,6 +7,7 @@
   --color-beige: #F5F8FB;
   --color-price-gray: #000B26A6;
   --color-red: #FF1640;
+  --color-input: #F5F8FB;
 }
 
 body {
@@ -34,7 +35,7 @@ main {
 
 /* buttons */
 
-button.btn-dark {
+.btn-dark {
   background-color: var(--color-dark);
   color: #FFFFFF;
   border: none;
@@ -43,22 +44,22 @@ button.btn-dark {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 0 10px;
   cursor: pointer;
   font-weight: 500;
   transition: all .3s ease-in-out;
   box-sizing: border-box;
   border: 2px solid transparent;
-
+  text-decoration: none;
+  color: #fff;
 }
 
-button.btn-dark:hover {
+.btn-dark:hover {
   color: var(--color-dark);
   border: 2px solid var(--color-dark);
   background-color: #fff;
 }
 
-button.btn-dark-outline {
+.btn-dark-outline {
   background-color: transparent;
   border: 2px solid var(--color-dark);
   padding: 10px 20px;
@@ -66,13 +67,15 @@ button.btn-dark-outline {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 0 10px;
   cursor: pointer;
   font-weight: 500;
   transition: all .3s ease-in-out;
+  text-decoration: none;
+  color: var(--color-dark);
+
 }
 
-button.btn-dark-outline:hover {
+.btn-dark-outline:hover {
   border: 2px solid transparent;
   background-color: var(--color-dark);
   color: #fff;
@@ -353,10 +356,12 @@ header div.container div.top-header div.top-header-item div.aside-nav ul {
   padding: 0;
   display: flex;
   align-items: center;
+  padding-left: 70px;
+  display: flex;
+  gap: 51px;
 }
 
 header div.container div.top-header div.top-header-item div.aside-nav ul li {
-  padding: 0 25px;
   cursor: pointer;
   font-weight: 500;
   position: relative;
@@ -375,7 +380,7 @@ header div.container div.top-header div.top-header-item div.aside-nav ul li::aft
   content: '';
   position: absolute;
   top: 0;
-  left: 100%;
+  left: 150%;
   display: block;
   height: 25px;
   width: 1px;
@@ -419,7 +424,7 @@ div.top-header-item div.language-select-container select option {}
 div.top-header-item div.auth-buttons {
   display: flex;
   align-items: center;
-
+  gap: 5px;
 }
 
 div.top-header-item div.auth-buttons .auth-button {}
@@ -430,7 +435,7 @@ header div.container div.bottom-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 25px 0 25px 0;
+  margin: 20px 0 25px 0;
 }
 
 header div.container div.bottom-header nav {}
@@ -444,7 +449,8 @@ header div.container div.bottom-header nav ul {
 
 header div.container div.bottom-header nav ul li {
   list-style-type: none;
-  margin: 0 30px 0 0;
+  margin: 0 33px 0 0;
+  letter-spacing: .3px;
 }
 
 header div.container div.bottom-header nav ul li a {
@@ -650,7 +656,7 @@ div.footer-links ul.footer-links-list li:last-child {
 
 
 section div.container div.faq-container {
-  margin: 150px 0;
+  margin: 0 0 150px 0;
 }
 
 section div.container div.faq-container div.faq-item {
@@ -705,6 +711,8 @@ section div.container div.faq-container div.faq-item div.faq-question-container 
   font-size: 18px;
   color: var(--color-price-gray);
   transition: all .3s ease-in-out;
+  letter-spacing: .6px;
+  padding: 0 0 0 7px;
 }
 
 
@@ -976,7 +984,7 @@ div.modal-form-input.checkbox a {
 }
 
 .flex-center {
-  margin: 100px 0 100px 0;
+  margin: 129px auto 480px auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -991,13 +999,16 @@ div.recover-form div.recover-form-title {
   font-weight: 600;
   font-size: 24px;
   color: var(--color-dark);
-  margin: 0 0 25px 0;
+  margin: 0 0 27px 7px;
 }
 
 
 
 div.recover-form div.recover-form-desc {
-  max-width: 470px;
+  max-width: 466px;
+  margin: 0 0 30px 7px;
+  letter-spacing: .5px;
+  line-height: 19px;
 }
 
 
@@ -1017,7 +1028,7 @@ div.recover-form div.recover-form-input input {
   background-color: var(--color-beige);
   border: solid 1px var(--color-border);
   outline: none;
-  margin: 10px 0 15px 0;
+  margin: 10px 0 23px 0;
 }
 
 
@@ -1026,6 +1037,8 @@ div.recover-form div.recover-form-input label {
   font-size: 16px;
   font-family: 'SF Pro Display', sans-serif;
   color: var(--color-price-gray);
+  letter-spacing: .3px;
+  margin: 0 0 0 11px;
 }
 
 
@@ -1041,6 +1054,7 @@ div.recover-form div.recover-form-button button {
   font-family: 'SF Pro Display', sans-serif;
   font-size: 16px;
 
+  letter-spacing: 1px;
 
 }
 
@@ -1062,12 +1076,14 @@ div.container.flex-center {}
 div.container.flex-center div.register-container {
   padding: 40px;
   background-color: #fff;
+  width: 550px;
+  box-sizing: border-box;
 }
 
 div.container.flex-center div.register-container div.register-title {
   font-weight: 600;
   font-size: 24px;
-  margin: 0 0 50px 0;
+  margin: 0 0 26px 7px;
 }
 
 
@@ -1087,7 +1103,7 @@ div.container.flex-center div.register-container div.register-inputs-row div.reg
 div.container.flex-center div.register-container div.register-inputs-row div.register-input label {
   font-size: 16px;
   color: var(--color-price-gray);
-  margin: 0 0 10px 0;
+  margin: 0 0 10px 8px;
 }
 
 
@@ -1106,13 +1122,14 @@ div.container.flex-center div.register-container div.register-inputs-row div.reg
 div.container.flex-center div.register-container div.register-input {
   display: flex;
   flex-direction: column;
-  margin: 0 0 40px 0;
+  margin: 0 0 14px 0;
+  width: 100%;
 }
 
 div.container.flex-center div.register-container div.register-input label {
   font-size: 16px;
   color: var(--color-price-gray);
-  margin: 0 0 10px 0;
+  margin: 0 0 10px 9px;
 }
 
 
@@ -1126,9 +1143,16 @@ div.container.flex-center div.register-container div.register-input input {
   font-family: 'SF Pro Display', sans-serif;
 }
 
+.password-warning {
+  font-size: 14px;
+  color: #F32C4F;
+  margin: 3px 0 0 10px;
+  letter-spacing: .4px;
+}
 
-
-div.container.flex-center div.register-container div.register-next-button {}
+div.container.flex-center div.register-container div.register-next-button {
+  margin: 23px -7px 0 8px;
+}
 
 div.container.flex-center div.register-container div.register-next-button button.register-button {
   border: none;
@@ -1254,11 +1278,16 @@ div.register-country-select div.country-options div.country-option div.country-n
 }
 
 .col-2-3 {
-  flex: 0 0 65%;
+  flex: 0 0 75%;
 }
 
 .col-1-3 {
-  flex: 0 1 35%;
+  flex: 0 1 100px;
+  width: 100px !important;
+}
+
+.mmz {
+  margin: 0 !important;
 }
 
 
