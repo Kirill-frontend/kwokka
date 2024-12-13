@@ -1,0 +1,142 @@
+.switch-container input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.switch-container label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 40px;
+  height: 20px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+.switch-container label:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+.switch-container input:checked+label {
+  background: #bada55;
+}
+
+.switch-container input:checked+label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+.switch-container label:active:after {
+  width: 40px;
+}
+
+
+section.domains-table {
+  background-color: #fff;
+  margin: 24px 0 0 0;
+  border-radius: 12px;
+  padding: 18px 24px;
+}
+
+section.domains-table div.domains-over-table {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.domains-table div.domains-over-table div.domains-over-table-inputs {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+section.domains-table div.domains-over-table div.domains-over-table-inputs button {
+  border: none;
+  color: var(--color-text-gray);
+  font-weight: 500;
+  font-size: 18px;
+  padding: 8px 20px 12px 20px;
+  background-color: #B7C7ED33;
+}
+
+
+
+section.domains-table div.domains-over-table div.domains-over-table-inputs div.switch-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+section.domains-table div.domains-over-table div.domains-over-table-inputs div.switch-container input#switch {}
+
+
+
+section.domains-table div.domains-over-table div.domains-over-table-inputs div.switch-container label {}
+section.domains-table div.domains-over-table div.domains-over-table-inputs div.switch-container span {
+  color: var(--color-text-gray);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+
+section.domains-table div.domains-over-table div.domains-over-table-search {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex: 0 0 500px;
+}
+
+section.domains-table div.domains-over-table div.domains-over-table-search input {
+  border: 2px solid #000B260D;
+  border-radius: 15px;
+  padding: 16px 10.5px;
+  width: 100%;
+  font-size: 18px;
+  color: var(--color-text-secondary);
+  letter-spacing: .3px;
+}
+
+
+
+section.domains-table div.domains-over-table div.domains-over-table-search span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  transform: translateY(50%);
+}
+
+section.domains-table div.domains-over-table div.domains-over-table-search span svg {}
+
+section.domains-table div.domains-over-table div.domains-over-table-search span svg path {}
+
+
+
+section.domains-table table.domains {}
+
+section.domains-table table.domains thead {}
+
+section.domains-table table.domains thead tr {}
+
+section.domains-table table.domains thead tr th {}
+
+section.domains-table table.domains thead tr th input#select_all {}
+
+
+
+section.domains-table table.domains tbody {}
+
+section.domains-table table.domains tbody tr {}
+
+section.domains-table table.domains tbody tr td {}
+
+section.domains-table table.domains tbody tr td input#domain_checkbox_1 {}
