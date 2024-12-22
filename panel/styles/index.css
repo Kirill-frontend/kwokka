@@ -157,7 +157,7 @@ section div.shop-container div.shop-row {
 }
 
 section div.shop-container div.shop-row div.shop-col {
-  flex: 0 0 739px;
+  flex: 0 1 739px;
   background-color: var(--color-base-container);
   border-radius: 8px;
   padding: 24px;
