@@ -1,0 +1,285 @@
+.progress-container {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  /* margin: 20px; */
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+  width: 100%;
+  height: 100%;
+}
+
+.progress-ring__circle {
+  fill: none;
+  stroke: #00c853;
+  /* Зеленый цвет */
+  stroke-width: 4;
+  stroke-dasharray: 125.6;
+  /* 2 * π * радиус (20px) */
+  stroke-dashoffset: calc(125.6 - (125.6 * var(--percent) / 100));
+  transition: stroke-dashoffset 0.6s ease;
+  stroke-linecap: round;
+  /* Закруглённые края линии */
+}
+
+.progress-background {
+  fill: none;
+  stroke: #e0e0e0;
+  stroke-width: 4;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+div.server-details-container {
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+div.server-details-container div.server-details-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin: 0 0 12px 0; */
+}
+
+div.server-details-container div.server-details-header div.server-details-titles {
+  display: flex;
+  align-items: center;
+}
+
+div.server-details-container div.server-details-header div.server-details-titles div.server-details-name {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: .3px;
+}
+
+
+
+div.server-details-container div.server-details-header div.server-details-titles div.server-details-tariff {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  color: #596072;
+  margin: 0 0 0 9px;
+}
+
+
+
+div.server-details-container div.server-details-header div.server-details-configure {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+div.server-details-container div.server-details-header div.server-details-configure span {
+  /* margin: 1px 2px 0 0; */
+  display: flex;
+}
+
+div.server-details-container div.server-details-header div.server-details-configure span svg {}
+
+div.server-details-container div.server-details-header div.server-details-configure span svg path {}
+
+
+
+div.server-details-container div.server-details-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 25px 0 0 0;
+}
+
+div.server-details-container div.server-details-body div.server-details-stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-base-container);
+  padding: 0px 24px;
+  border-radius: 20px;
+  height: 72px;
+}
+
+div.server-details-container div.server-details-body div.server-details-stat div.server-details-stat-name {
+  flex: 0 0 170px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: .03em;
+}
+
+div.server-details-container div.server-details-body div.server-details-stat div.server-details-stat-name span {
+  padding: 11px;
+  background-color: var(--color-base-container);
+  border-radius: 8px;
+  margin: 0 24px 0 0;
+  border: solid 1px #586B951A;
+}
+
+div.server-details-container div.server-details-body div.server-details-stat div.server-details-stat-name span svg {}
+
+div.server-details-container div.server-details-body div.server-details-stat div.server-details-stat-name span svg path {}
+
+
+
+div.server-details-container div.server-details-body div.server-details-stat div.server-details-stat-workload {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+div.server-details-container div.server-details-body div.server-details-stat div.server-details-stat-workload div.progress-container {}
+
+div.server-details-container div.server-details-body div.server-details-stat div.server-details-stat-workload div.progress-container svg.progress-ring {}
+
+div.server-details-container div.server-details-body div.server-details-stat div.server-details-stat-workload div.progress-container svg.progress-ring circle.progress-background {}
+
+
+
+div.server-details-container div.server-details-body div.server-details-stat div.server-details-stat-workload div.progress-container svg.progress-ring circle.progress-ring__circle {}
+
+
+
+div.server-details-container div.server-details-body div.server-details-stat div.server-details-stat-workload div.progress-container div.progress-text {}
+
+
+
+div.server-details-container div.server-details-body div.server-details-stat div.server-details-stat-value {
+  flex: 0 0 173px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: .03em;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.server-details-container div.server-details-body div.server-details-stat div.server-details-stat-value span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+
+
+div.server-details-container div.server-details-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+div.server-details-container div.server-details-footer div.server-details-switch {}
+
+div.server-details-container div.server-details-footer div.server-details-switch div.switch-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 15px 0 0 0;
+}
+
+
+
+div.server-details-container div.server-details-footer div.server-details-actions {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 0 0;
+
+}
+
+div.server-details-container div.server-details-footer div.server-details-actions div.server-details-uptime {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: .03em;
+  color: var(--color-text-gray);
+
+  margin: 0 25px 0 0;
+}
+
+
+
+div.server-details-container div.server-details-footer div.server-details-actions div.server-details-refresh {}
+
+div.server-details-container div.server-details-footer div.server-details-actions div.server-details-refresh button {
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 12px 20px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: .03em;
+  font-family: 'SF Pro Display', sans-serif;
+  background-color: var(--color-button-secondary);
+  color: var(--color-text-gray);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+div.server-details-container div.server-details-footer div.server-details-actions div.server-details-refresh button:hover {
+  background-color: var(--color-text-primary);
+  color: #fff;
+  fill: #fff;
+}
+
+div.server-details-container div.server-details-footer div.server-details-actions div.server-details-refresh button:hover ~ span svg {
+  fill: #fff;
+}
+
+div.server-details-container div.server-details-footer div.server-details-actions div.server-details-refresh button span {}
+
+div.server-console {
+  padding: 20px 24px;
+  margin: 24px 0 0 0;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+div.server-console div.server-console-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+div.server-console div.server-console-header div.server-console-title {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: .03em;
+}
+
+
+
+div.server-console div.server-console-header div.server-console-configure {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--color-text-primary);
+  letter-spacing: .03em;
+  cursor: pointer;
+}
+
+div.server-console div.server-console-header div.server-console-configure span {}
+
+div.server-console div.server-console-header div.server-console-configure span svg {}
+
+div.server-console div.server-console-header div.server-console-configure span svg path {}

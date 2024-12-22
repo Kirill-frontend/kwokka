@@ -3,10 +3,18 @@
   --color-dark: #000B26;
   --color-blue: #0077FE1A;
   --color-red: #DF2E4E;
+  --color-white: #FFF;
+  --color-dark-red: #CD2335;
   --color-input: #F5F8FB;
   --color-content-background: #E6EAEE;
   --color-text-secondary: #586B9599;
   --color-text-gray: #586B95;
+  --color-text-gray-10: #586B951A;
+  --color-text-gray-80: #586B95CC;
+  --color-text-primary: #0077FE;
+  --color-base-container: #F7F9FC;
+  --color-button-secondary: #B7C7ED33;
+  --color-text-dark-65: #596072;
 }
 
 body {
@@ -256,6 +264,7 @@ section {
   position: sticky;
   top: 0;
   background-color: #fff;
+  z-index: 999;
 }
 
 header div.page-title {
@@ -304,7 +313,8 @@ header div.header-interactions div.header-interactions-notifications span.header
 
 
 
-header div.header-interactions div.header-interactions-balance {
+header div.header-interactions .header-interactions-balance {
+  border: none;
   display: flex;
   align-items: center;
   padding: 10px 16px;
@@ -313,8 +323,8 @@ header div.header-interactions div.header-interactions-balance {
   margin: 0 27px 0 0;
 }
 
-header div.header-interactions div.header-interactions-balance div.header-interactions-balance-deposit {
-  padding: 0px 4px 2px 4px;
+header div.header-interactions .header-interactions-balance div.header-interactions-balance-deposit {
+  padding: 2px 4px 2px 4px;
   background-color: #020F3073;
   border-radius: 50%;
   color: #fff;
@@ -323,11 +333,21 @@ header div.header-interactions div.header-interactions-balance div.header-intera
 
 
 
-header div.header-interactions div.header-interactions-balance span.header-interactions-balance-amount {}
+header div.header-interactions .header-interactions-balance span.header-interactions-balance-amount {
+  font-weight: 500;
+  font-size: 18px;
+  font-family: 'SF Pro Display', sans-serif;
+  letter-spacing: .03em;
+}
 
 
 
-header div.header-interactions div.header-interactions-balance span.header-interactions-balance-currency {}
+header div.header-interactions .header-interactions-balance span.header-interactions-balance-currency {
+  font-weight: 500;
+  font-size: 18px;
+  font-family: 'SF Pro Display', sans-serif;
+  letter-spacing: .03em;
+}
 
 
 
@@ -335,18 +355,20 @@ header div.header-interactions div.header-interactions-account {
   padding: 7px;
   border-radius: 8px;
   background-color: var(--color-input);
+  position: relative;
 }
 
 header div.header-interactions div.header-interactions-account svg {}
 
 header div.header-interactions div.header-interactions-account svg path {}
 
-.main-content {  
+.main-content {
   background-color: var(--color-content-background);
   padding: 48px 48px 0 48px;
+  min-height: 100%;
 }
 
-section.warning {  
+section.warning {
   padding: 26px;
   display: flex;
   justify-content: space-between;
@@ -378,9 +400,12 @@ section.warning div.warning-text div.warning-p {
 
 
 
-section.warning div.warning-button {}
+section.warning div.warning-button {
+  display: flex;
+  gap: 12px;
+}
 
-section.warning div.warning-button button.warning-btn {
+section.warning div.warning-button .warning-btn {
   border: none;
   padding: 10px 20px;
   font-weight: 500;
@@ -388,5 +413,151 @@ section.warning div.warning-button button.warning-btn {
   font-family: 'SF Pro Display', sans-serif;
   background-color: #B7C7ED33;
   color: #586B95;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  border-radius: 10px;
+  display: block;
+  text-decoration: none;
 }
 
+section.warning div.warning-button .warning-btn:hover {
+  background-color: var(--color-text-primary);
+  color: #fff;
+}
+
+.switch-container input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.switch-container label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 40px;
+  height: 20px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+.switch-container label:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+.switch-container input:checked+label {
+  background: #bada55;
+}
+
+.switch-container input:checked+label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+.switch-container label:active:after {
+  width: 40px;
+}
+
+.pop-up-text {
+  font-size: 16px;
+  letter-spacing: .03em;
+  color: #000B26;
+  margin: 0 0 0 5px;
+}
+
+div.pop-up {
+  width: 287px;
+  background-color: #fff;
+  border-radius: 12px;
+  position: absolute;
+  top: 50px;
+  left: -250px;
+  padding: 12px 20px;
+  z-index: 9999;
+}
+
+div.pop-up.hidden {
+  display: none;
+}
+
+div.pop-up div.pop-up-container {}
+
+div.pop-up div.pop-up-container div.pop-up-mail {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: .03em;
+}
+
+
+
+div.pop-up div.pop-up-container div.pop-up-id {
+  font-size: 15px;
+  margin: 6px 0 16px 0;
+}
+
+
+
+div.pop-up div.pop-up-container div.pop-up-options {}
+
+div.pop-up div.pop-up-container div.pop-up-options div.pop-up-option {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 16px 0;
+  border-top: 1px solid #000B260D;
+}
+
+div.pop-up div.pop-up-container div.pop-up-options div.pop-up-option:nth-child(2) {
+  border-top: none;
+}
+
+div.pop-up div.pop-up-container div.pop-up-options div.pop-up-option div.pop-up-icon {}
+
+div.pop-up div.pop-up-container div.pop-up-options div.pop-up-option div.pop-up-icon svg {}
+
+div.pop-up div.pop-up-container div.pop-up-options div.pop-up-option div.pop-up-icon svg rect {}
+
+
+
+div.pop-up div.pop-up-container div.pop-up-options div.pop-up-option div.pop-up-icon svg path {}
+
+
+
+div.pop-up div.pop-up-container div.pop-up-options div.pop-up-option div.pop-up-col {}
+
+div.pop-up div.pop-up-container div.pop-up-options div.pop-up-option div.pop-up-col div.pop-up-title {
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: .03em;
+}
+
+
+
+div.pop-up div.pop-up-container div.pop-up-options div.pop-up-option div.pop-up-col div.pop-up-desc {
+  font-size: 14px;
+  letter-spacing: .03em;
+}
+
+
+
+div.pop-up div.pop-up-container div.pop-up-options div.switch-container {}
+
+div.pop-up div.pop-up-container div.pop-up-options div.switch-container input#switch {}
+
+
+
+div.pop-up div.pop-up-container div.pop-up-options div.switch-container label {}
+
+
+
+div.pop-up div.pop-up-container div.pop-up-options div.switch-container span {}

@@ -1,44 +1,3 @@
-.switch-container input[type=checkbox] {
-  height: 0;
-  width: 0;
-  visibility: hidden;
-}
-
-.switch-container label {
-  cursor: pointer;
-  text-indent: -9999px;
-  width: 40px;
-  height: 20px;
-  background: grey;
-  display: block;
-  border-radius: 100px;
-  position: relative;
-}
-
-.switch-container label:after {
-  content: '';
-  position: absolute;
-  top: 3px;
-  left: 5px;
-  width: 14px;
-  height: 14px;
-  background: #fff;
-  border-radius: 90px;
-  transition: 0.3s;
-}
-
-.switch-container input:checked+label {
-  background: #bada55;
-}
-
-.switch-container input:checked+label:after {
-  left: calc(100% - 5px);
-  transform: translateX(-100%);
-}
-
-.switch-container label:active:after {
-  width: 40px;
-}
 
 
 section.domains-table {
@@ -66,6 +25,14 @@ section.domains-table div.domains-over-table div.domains-over-table-inputs butto
   font-size: 18px;
   padding: 8px 20px 12px 20px;
   background-color: #B7C7ED33;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+section.domains-table div.domains-over-table div.domains-over-table-inputs button:hover {
+  color: #fff;
+  background-color: var(--color-text-primary);
 }
 
 
@@ -81,6 +48,7 @@ section.domains-table div.domains-over-table div.domains-over-table-inputs div.s
 
 
 section.domains-table div.domains-over-table div.domains-over-table-inputs div.switch-container label {}
+
 section.domains-table div.domains-over-table div.domains-over-table-inputs div.switch-container span {
   color: var(--color-text-gray);
   font-size: 18px;
@@ -121,22 +89,81 @@ section.domains-table div.domains-over-table div.domains-over-table-search span 
 
 
 
-section.domains-table table.domains {}
+section.domains-table table.domains {
+  width: 100%;
+  display: block;
+}
 
-section.domains-table table.domains thead {}
+section.domains-table table.domains thead {
+  display: block;
+  margin: 25px 0 0 0;
+  width: 100%;
+  border-bottom: 1px solid #000B260D;
+  padding: 0 0 19px 0;
+}
 
-section.domains-table table.domains thead tr {}
+section.domains-table table.domains thead tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 
-section.domains-table table.domains thead tr th {}
+.domain-table-col-domain {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0 !important;
+
+}
+
+#domains,
+#auto-renewal,
+#paid-up {
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: 'SF Pro Display', sans-serif;
+  letter-spacing: .3px;
+}
+
+section.domains-table table.domains thead tr th {
+  font-weight: 500;
+  font-size: 18px;
+  font-family: 'SF Pro Display', sans-serif;
+  letter-spacing: .3px;
+  margin: 0 0 0 24px;
+}
 
 section.domains-table table.domains thead tr th input#select_all {}
 
 
 
-section.domains-table table.domains tbody {}
+section.domains-table table.domains tbody {
+  display: block;
+  width: 100%;
+}
 
-section.domains-table table.domains tbody tr {}
+section.domains-table table.domains tbody tr {
+  display: block;
+  padding: 19px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-section.domains-table table.domains tbody tr td {}
+}
+
+section.domains-table table.domains tbody tr td {
+  font-size: 18px;
+  letter-spacing: .3px;
+  flex: 1 0 14.28%;
+  margin: 0 0 0 16px;
+}
+
+section.domains-table table.domains tbody tr td.domains-item-first-col {
+  color: var(--color-text-primary);
+  margin: 0 !important;
+}
 
 section.domains-table table.domains tbody tr td input#domain_checkbox_1 {}

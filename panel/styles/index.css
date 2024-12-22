@@ -56,6 +56,12 @@ section .service-container div.service-content div.service-item {
   width: 200px;
   height: 200px;
   box-sizing: border-box;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+section .service-container div.service-content div.service-item:hover {
+  background-color: #0077FE05;
 }
 
 section .service-container div.service-content div.service-item div.service-item-title {
@@ -93,6 +99,12 @@ section .service-container div.service-content div.service-item-add {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+section .service-container div.service-content div.service-item-add:hover {
+  background-color: #0077FE05;
 }
 
 
@@ -119,4 +131,88 @@ section .service-container div.service-content div.service-background-image img 
   width: 8px;
   border-radius: 50%;
   background-color: #3CC87D;
+}
+
+section {}
+
+section div.shop-container {
+  background-color: #fff;
+  border-radius: 12px;
+  margin: 24px 0 0 0;
+  padding: 24px;
+}
+
+section div.shop-container div.shop-title {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: .03em;
+  margin: 0 0 16px 0;
+}
+
+
+
+section div.shop-container div.shop-row {
+  display: flex;
+  gap: 24px;
+}
+
+section div.shop-container div.shop-row div.shop-col {
+  flex: 0 0 739px;
+  background-color: var(--color-base-container);
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section div.shop-container div.shop-row div.shop-col div.shop-text {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+
+section div.shop-container div.shop-row div.shop-col div.shop-text div.shop-icon {}
+
+section div.shop-container div.shop-row div.shop-col div.shop-text div.shop-icon svg {}
+
+section div.shop-container div.shop-row div.shop-col div.shop-text div.shop-icon svg path {}
+
+
+
+section div.shop-container div.shop-row div.shop-col div.shop-text div.shop-text-col {}
+
+section div.shop-container div.shop-row div.shop-col div.shop-text div.shop-text-col div.shop-text-title {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: .03em;
+}
+
+
+
+section div.shop-container div.shop-row div.shop-col div.shop-text div.shop-text-col div.shop-text-desc {
+  font-size: 18px;
+  letter-spacing: .03em;
+  color: #565E71;
+}
+
+
+
+section div.shop-container div.shop-row div.shop-col div.shop-button {}
+
+section div.shop-container div.shop-row div.shop-col div.shop-button button {
+  border: none;
+  color: var(--color-text-gray);
+  padding: 12px 16px 16px 16px;
+  font-weight: 500;
+  font-family: 'SF Pro Display', sans-serif;
+  background-color: var(--color-button-secondary);
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+section div.shop-container div.shop-row div.shop-col div.shop-button button:hover {
+  background-color: var(--color-text-primary);
+  color: #fff;
 }

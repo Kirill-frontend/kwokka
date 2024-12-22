@@ -1,0 +1,221 @@
+ul.domain-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+ul.domain-holder li {
+  padding: 25px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-base-container);
+  border-radius: 12px;
+}
+
+ul.domain-holder li.unavailable {
+  background-color: var(--color-base-container);
+  opacity: 50%;
+}
+
+ul.domain-holder li .domain-holder-name {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--color-dark);
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+ul.domain-holder li .domain-holder-name input[name="domain"] {
+  width: 20px;
+  height: 20px;
+}
+
+ul.domain-holder li .domain-holder-name .discount-number {
+  font-weight: 600;
+  background-color: var(--color-red);
+  color: #fff;
+  padding: 3px 5px;
+  font-size: 14px;
+  border-radius: 25px;
+  margin: 3px 0 0 5px;
+}
+
+ul.domain-holder li .domain-holder-name .domain-holder-url-domain {
+  font-size: 18px;
+  letter-spacing: 1.3px;
+}
+
+
+ul.domain-holder li div.domain-holder-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 13px;
+}
+
+ul.domain-holder li div.domain-holder-actions div.domain-holder-price {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--color-dark)
+}
+
+ul.domain-holder li div.domain-holder-actions div.domain-holder-price::after {
+  content: '\20BD';
+}
+
+ul.domain-holder li div.domain-holder-actions .domain-holder-old-price {
+  font-size: 20px;
+  color: #000B264D;
+  text-decoration: line-through;
+}
+
+ul.domain-holder li div.domain-holder-actions .domain-holder-old-price::after {
+  content: '\20BD';
+}
+
+
+ul.domain-holder li div.domain-holder-actions div.domain-holder-button  {
+  padding: 12px 20px;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: var(--color-beige);
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  font-family: 'SF Pro Display', sans-serif;
+  letter-spacing: .3px;
+}
+
+
+
+
+div.domain-holder-more {
+  display: flex;
+  justify-content: center;
+  margin: 55px 0 60px 0;
+}
+
+div.domain-holder-more button {
+  border: none;
+  padding: 10px 0;
+  background-color: var(--color-beige);
+  color: var(--color-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  gap: 25px;
+  font-family: 'SF Pro Display', sans-serif;
+}
+
+div.domain-holder-more button:hover {
+  background-color: #0077fe2e;
+}
+
+.domain-label {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+div.choose-domain-container {
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+div.choose-domain-container div.choose-domain-title {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: .3px;
+  margin: 0 0 24px 0;
+}
+
+
+
+div.choose-domain-container div.choose-domain-search-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+div.choose-domain-container div.choose-domain-search-container div.choose-domain-search-input {
+  flex: 1;
+}
+
+div.choose-domain-container div.choose-domain-search-container div.choose-domain-search-input input {
+  background-color: var(--color-input);
+  border: solid 1px #586B951A;
+  padding: 15px 16px;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'SF Pro Display', sans-serif;
+  letter-spacing: .3px;
+  color: var(--color-text-secondary);
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 8px;
+  outline: none;
+}
+
+
+
+div.choose-domain-container div.choose-domain-search-container div.choose-domain-search-but {}
+
+div.choose-domain-container div.choose-domain-search-container div.choose-domain-search-but button {
+  border: none;
+  padding: 17px 20px 14px 20px;
+  background-color: #B7C7ED33;
+  color: var(--color-gray);
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: .3px;
+  font-family: 'SF Pro Display', sans-serif;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  border-radius: 8px;
+}
+
+div.choose-domain-container div.choose-domain-search-container div.choose-domain-search-but button:hover {
+  background-color: var(--color-text-primary);
+  color: #fff;
+}
+
+
+
+div.choose-domain-container div.choose-domain-filters {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0 12px 0;
+  max-width: 1502px;
+}
+
+div.choose-domain-container div.choose-domain-filters div.choose-domain-filter.selected {
+  color: var(--color-text-primary);
+}
+
+div.choose-domain-container div.choose-domain-filters div.choose-domain-filter:first-child {
+  padding: 0 0 0 26px;
+}
+
+div.choose-domain-container div.choose-domain-filters div.choose-domain-filter:last-child {
+  padding: 0 26px 0 0;
+}
+
+
+div.choose-domain-container div.choose-domain-filters div.choose-domain-filter {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: .3px;
+}
+
+
+
+div.choose-domain-container div.choose-domain-domains {}

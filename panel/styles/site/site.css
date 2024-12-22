@@ -1,0 +1,465 @@
+section.search {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 19px 20px;
+  margin: 10px 0;
+  gap: 22px;
+}
+
+section.search div.name-virtual-host {
+  background-color: #B7C7ED33;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 50;
+  font-size: 18px;
+  letter-spacing: .03em;
+  padding: 8px 12px 8px 26px;
+  border-radius: 8px;
+}
+
+section.search div.name-virtual-host span {}
+
+section.search div.name-virtual-host span svg {}
+
+section.search div.name-virtual-host span svg path {}
+
+
+
+section.search div.button-configure {}
+
+section.search div.button-configure button {
+  border: none;
+  color: var(--color-text-gray);
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: .03em;
+  padding: 8px 20px 12px 20px;
+  background-color: #B7C7ED33;
+  display: flex;
+  align-items: center;
+  font-family: 'SF Pro Display', sans-serif;
+  border-radius: 8px;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+section.search div.button-configure button:hover {
+  background-color: var(--color-text-primary);
+  color: #fff;
+}
+
+section.search div.button-configure button span {
+  display: flex;
+}
+
+section.search div.button-configure button span svg {}
+
+section.search div.button-configure button span svg path {}
+
+
+
+section.search div.input-search-container {
+  flex: 0 1 1169px;
+  position: relative;
+}
+
+section.search div.input-search-container input {
+  border: 1px solid #B7C7ED66;
+  border-radius: 10px;
+  padding: 11px 16px;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: 'SF Pro Displays', sans-serif;
+  letter-spacing: .03em;
+  color: var(--color-text-secondary);
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+
+
+
+section.search div.input-search-container span {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-125%, -50%);
+}
+
+section.search div.input-search-container span svg {}
+
+section.search div.input-search-container span svg path {}
+
+section.sites {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+section.sites a.site {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 18px 24px;
+}
+
+section.sites a.site div.site-item-col {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+section.sites a.site div.site-item-col div.site-item-title {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: .03em;
+  color: var(--color-dark);
+}
+
+section.sites a.site div.site-item-col div.site-item-val {
+  position: relative;
+
+}
+
+section.sites a.site div.site-item-col div.site-item-val span {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: .03em;
+  color: var(--color-text-gray);
+  max-width: 190px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  display: block;
+}
+
+section.sites a.site div.site-item-col div.site-item-val.copy-path::after {
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.5336 8.5H9.53357C8.79719 8.5 8.20024 9.09695 8.20024 9.83333V15.8333C8.20024 16.5697 8.79719 17.1666 9.53357 17.1666H15.5336C16.2699 17.1666 16.8669 16.5697 16.8669 15.8333V9.83333C16.8669 9.09695 16.2699 8.5 15.5336 8.5Z' stroke='%230077FE' stroke-width='1.33336' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M5.53272 12.5001H4.86605C4.51243 12.5001 4.17329 12.3597 3.92325 12.1096C3.6732 11.8596 3.53272 11.5204 3.53272 11.1668V5.16683C3.53272 4.8132 3.6732 4.47407 3.92325 4.22402C4.17329 3.97397 4.51243 3.8335 4.86605 3.8335H10.866C11.2197 3.8335 11.5588 3.97397 11.8088 4.22402C12.0589 4.47407 12.1994 4.8132 12.1994 5.16683V5.83349' stroke='%230077FE' stroke-width='1.33336' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  display: block;
+  height: 21px;
+  width: 21px;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+}
+
+div.site-details {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+div.site-details div.site-details-title {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: .03em;
+  line-height: 24px;
+  margin: 0 0 24px 0;
+}
+
+
+
+div.site-details div.site-detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-base-container);
+  border-radius: 12px;
+  padding: 12px 24px;
+  margin: 0 0 12px 0;
+}
+
+div.site-details div.site-detail-row div.site-detail-col {}
+
+div.site-details div.site-detail-row div.site-detail-col div.site-detail-label {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: .03em;
+  line-height: 21px;
+}
+
+
+
+div.site-details div.site-detail-row div.site-detail-col div.site-detail-value {
+  font-size: 18px;
+  letter-spacing: .03em;
+  color: var(--color-text-gray);
+  line-height: 21px;
+  margin: 2px 0 0 0;
+}
+
+
+
+div.site-details div.site-detail-row div.site-detail-col div.site-detail-col {}
+
+div.site-details div.site-detail-row div.site-detail-col div.site-detail-col div.site-detail-button {}
+
+div.site-details div.site-detail-row div.site-detail-col div.site-detail-button button {
+  border: none;
+  background-color: var(--color-base-container);
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--color-text-primary);
+  cursor: pointer;
+}
+
+
+
+div.site-details div.site-details-back-button {}
+
+div.site-details div.site-details-back-button button {
+  border: none;
+  background-color: var(--color-button-secondary);
+  font-weight: 500;
+  font-size: 16px;
+  font-family: 'SF Pro Display', sans-serif;
+  color: var(--color-text-gray);
+  padding: 12px 24px;
+  margin: 24px 0 0 0;
+  letter-spacing: .03em;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  border-radius: 8px;
+}
+div.site-details div.site-details-back-button button:hover {
+  color: #fff;
+  background-color: var(--color-text-primary);
+}
+
+div.app-detail-container {
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+div.app-detail-container div.app-detail-title {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: .3px;
+  margin: 0 0 27px 0;
+}
+
+div.app-detail-container div.app-detail-title span {
+  color: #596072;
+
+}
+
+
+
+div.app-detail-container div.apps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+div.app-detail-container div.apps-container div.app {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background-color: var(--color-base-container);
+  border-radius: 12px;
+  gap: 167px;
+  height: 72px;
+  box-sizing: border-box;
+}
+
+div.app-detail-container div.apps-container div.app div.app-icon {
+  display: flex;
+  align-items: center;
+}
+
+div.app-detail-container div.apps-container div.app div.app-icon svg {
+  margin: 0 10px 0 0;
+}
+
+div.app-detail-container div.apps-container div.app div.app-icon div.app-name-container div.app-name-title {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: .03em;
+  line-height: 21px;
+}
+
+
+
+
+div.app-detail-container div.apps-container div.app div.app-icon div.app-name-container div.app-name {
+  font-size: 18px;
+  letter-spacing: .03em;
+  line-height: 21px;
+  color: var(--color-text-gray)
+}
+
+
+
+div.app-detail-container div.apps-container div.app div.app-text-container {
+  display: flex;
+  /* justify-content: space-between; */
+  flex: 1;
+  align-items: center;
+  gap: 167px;
+}
+
+div.app-detail-container div.apps-container div.app div.app-icon div.app-name-container {}
+
+
+
+
+div.app-detail-container div.apps-container div.app div.app-text-container div.app-path-container {
+  max-width: 237px;
+}
+
+div.app-detail-container div.apps-container div.app div.app-text-container div.app-path-container div.app-path-tit {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: .03em;
+  line-height: 21px;
+}
+
+
+
+div.app-detail-container div.apps-container div.app div.app-text-container div.app-path-container div.app-path {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 18px;
+  letter-spacing: .03em;
+  line-height: 21px;
+  color: var(--color-text-gray)
+}
+
+
+
+div.app-detail-container div.apps-container div.app div.app-text-container div.app-db-container {
+  width: 120px;
+}
+
+div.app-detail-container div.apps-container div.app div.app-text-container div.app-db-container div.app-db-title {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: .03em;
+  line-height: 21px;
+}
+
+
+
+div.app-detail-container div.apps-container div.app div.app-text-container div.app-db-container div.app-db-nam {
+  font-size: 18px;
+  letter-spacing: .03em;
+  line-height: 21px;
+  color: var(--color-text-gray)
+}
+
+
+
+div.app-detail-container div.apps-container div.app div.app-text-container div.app-timestamp {}
+
+div.app-detail-container div.apps-container div.app div.app-text-container div.app-timestamp div.app-timestamp-title {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: .03em;
+  line-height: 21px;
+}
+
+
+
+div.app-detail-container div.apps-container div.app div.app-text-container div.app-timestamp div.app-timestamp-time {
+  font-size: 18px;
+  letter-spacing: .03em;
+  line-height: 21px;
+  color: var(--color-text-gray);
+  width: 160px;
+}
+
+
+
+div.app-detail-container div.apps-container div.app div.app-actions-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+div.app-detail-container div.apps-container div.app div.app-actions-container div.app-actions-more {
+  display: flex;
+  gap: 3px;
+}
+
+div.app-detail-container div.apps-container div.app div.app-actions-container div.app-actions-more span {
+  width: 4px;
+  height: 4px;
+  display: block;
+  border-radius: 50%;
+  background-color: #586B9599;
+}
+
+
+
+div.app-detail-container div.apps-container div.app div.app-actions-container div.app-actions-button {}
+
+div.app-detail-container div.apps-container div.app div.app-actions-container div.app-actions-button button {
+  border: none;
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.48px;
+  letter-spacing: 0.03em;
+  background-color: var(--color-button-secondary);
+  padding: 8px 20px 10px 20px;
+  border-radius: 8px;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+div.app-detail-container div.apps-container div.app div.app-actions-container div.app-actions-button button:hover {
+  color: #fff;
+  background-color: var(--color-text-primary);
+}
+
+
+
+div.app-detail-container div.app-detail-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 0 0 0;
+}
+
+div.app-detail-container div.app-detail-footer div.app-detail-count {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: .03em;
+  color: var(--color-text-gray);
+  margin: 3px 0 0 13px;
+}
+
+
+
+div.app-detail-container div.app-detail-footer div.app-detail-button {}
+
+div.app-detail-container div.app-detail-footer div.app-detail-button button {
+  border: none;
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 18px;
+  letter-spacing: .03em;
+  font-weight: 500;
+  padding: 8px 20px 10px 20px;
+  border-radius: 8px;
+  background-color: var(--color-button-secondary);
+  color: var(--color-text-gray);
+  margin: 0 12px 0 0;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+div.app-detail-container div.app-detail-footer div.app-detail-button button:hover {
+  color: #fff;
+  background-color: var(--color-text-primary);
+}

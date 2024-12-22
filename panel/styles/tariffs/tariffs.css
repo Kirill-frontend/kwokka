@@ -1,0 +1,179 @@
+
+div.tariffs-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+div.tariffs-container div.tariff {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;  
+  padding: 25px;
+  width: 444px;
+  box-sizing: border-box;
+}
+
+div.tariffs-container div.tariff p.tariff-title {
+  color: var(--color-price-gray);
+  margin: 0 0 10px 0;
+}
+
+div.tariffs-container div.tariff p.tariff-title-recommended {
+  display: none;
+}
+
+div.tariffs-container div.tariff.recommended p.tariff-title-recommended {
+  display: block;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin: 0 0 10px 0;
+}
+
+div.tariffs-container div.tariff.recommended p.tariff-title {
+  display: none;
+}
+
+
+div.tariffs-container div.tariff p.tariff-name {
+  font-weight: bold;
+  color: var(--color-dark);
+  font-size: 20px;
+  border-bottom: 1px solid var(--color-border);
+  padding: 0 0 20px 0;
+}
+
+
+
+div.tariffs-container div.tariff div.resources-container {
+  margin: 20px 0 20px 0;
+  border-bottom: 1px solid var(--color-border);
+  padding: 0 0 20px 0;
+}
+
+div.tariffs-container div.tariff div.resources-container p.resources-title {
+  font-weight: 600;
+  color: var(--color-dark);
+  margin: 0 0 20px 0;
+}
+
+
+
+div.tariffs-container div.tariff div.resources-container div.resource-item {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 0 15px 0;
+
+}
+
+div.tariffs-container div.tariff div.resources-container div.resource-item:last-child {
+  margin: 0;
+}
+
+div.tariffs-container div.tariff div.resources-container div.resource-item div.resource-item-icon {}
+
+div.tariffs-container div.tariff div.resources-container div.resource-item div.resource-item-icon svg {}
+
+div.tariffs-container div.tariff div.resources-container div.resource-item div.resource-item-icon svg path {}
+
+
+
+div.tariffs-container div.tariff div.resources-container div.resource-item div.resource-item-stats {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 5px;
+}
+
+div.tariffs-container div.tariff div.resources-container div.resource-item div.resource-item-stats div.resource-item-stats-title {
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+
+
+div.tariffs-container div.tariff div.resources-container div.resource-item div.resource-item-stats div.resource-item-stats-desc {
+  color: var(--color-price-gray);
+
+}
+
+
+div.tariffs-container div.tariff div.price-container {}
+
+div.tariffs-container div.tariff div.price-container p.price-info-text {
+  font-weight: 500;
+  color: var(--color-dark);
+  margin: 27px 0 10px 0px;
+}
+
+
+
+div.tariffs-container div.tariff div.price-container div.price-num {
+  display: flex;
+  align-items: center;
+}
+
+div.tariffs-container div.tariff div.price-container div.price-num div.price-crossout {
+  text-decoration: line-through;
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--color-price-gray);
+
+}
+
+div.tariffs-container div.tariff div.price-container div.price-num div.price-crossout::after {
+  content: '\20BD';
+}
+
+
+div.tariffs-container div.tariff div.price-container div.price-num div.price-actual {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--color-dark);
+  padding: 5px 10px;
+  background-color: #000B261A;
+  border-radius: 150px;
+  margin: 0 5px;
+}
+
+div.tariffs-container div.tariff div.price-container div.price-num div.price-actual::after {
+  content: '\20BD';
+}
+
+
+
+div.tariffs-container div.tariff div.price-container div.price-num div.price-details {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-dark);
+}
+
+
+
+div.tariffs-container div.tariff div.price-container div.price-saving {
+  margin: 5px 0 40px 0;
+  color: #000B2666;
+
+}
+
+
+
+div.tariffs-container div.tariff div.price-container div.tariff-button {}
+
+div.tariffs-container div.tariff div.price-container div.tariff-button button {
+  width: 100%;
+  border: none;
+  background-color: var(--color-dark);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px 0;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  margin: 9px 0 0 7px;
+}
+
+div.tariffs-container div.tariff div.price-container div.tariff-button button:hover {
+  background-color: var(--color-text-primary);
+  color: #fff;
+}

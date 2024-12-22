@@ -1,0 +1,246 @@
+div.image-container {
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 12px;
+  margin: 10px 0 0 0;
+}
+
+div.image-container div.image-title {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: .03em;
+  line-height: 24px;
+  margin: 0 0 30px 0;
+}
+
+
+
+div.image-container div.progress-container {
+  background-color: var(--color-base-container);
+  padding: 24px;
+}
+
+div.image-container div.progress-container div.progress-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 12px 0;
+}
+
+div.image-container div.progress-container div.progress-info div.progress-title {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: .03em;
+  color: var(--color-text-secondary);
+}
+
+
+
+div.image-container div.progress-container div.progress-info div.progress-memory {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: .03em;
+  color: var(--color-dark);
+
+}
+
+div.image-container div.progress-container div.progress-info div.progress-memory span {
+  color: var(--color-text-secondary);
+}
+
+
+
+div.image-container div.progress-container div.progress-bar-container {
+  width: 100%;
+  height: 12px;
+  background-color: var(--color-button-secondary);
+  border-radius: 10000px;
+}
+
+div.image-container div.progress-container div.progress-bar-container div.progress-bar-line {
+  height: 12px;
+  background-color: var(--color-button-secondary);
+  border-radius: 10000px;
+  background-color: var(--color-text-primary);
+}
+
+div.emails-container {
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 12px;
+  margin: 10px 0 0 0;
+}
+
+div.emails-container div.emails-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.emails-container div.emails-header div.emails-title {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: .03em;
+}
+
+div.emails-container div.emails-header div.emails-title span {
+  color: var(--color-text-gray);
+  margin: 0 0 0 1px;
+}
+
+
+
+div.emails-container div.emails-header div.emails-configure {}
+
+div.emails-container div.emails-header div.emails-configure svg {}
+
+div.emails-container div.emails-header div.emails-configure svg path {}
+
+
+.email-columns {
+  display: flex;
+  flex-direction: column;
+  margin: 24px 0 0 0;
+  gap: 12px;
+}
+
+div.emails-container .email-columns div.email {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  background-color: var(--color-base-container);
+  border-radius: 12px;
+}
+
+
+
+div.emails-container div.email div.email-info {
+  display: flex;
+  align-items: center;
+
+}
+
+div.emails-container .email-columns div.email div.email-info svg {}
+
+div.emails-container .email-columns div.email div.email-info svg path {}
+
+
+
+div.emails-container .email-columns div.email div.email-info span {
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: .03em;
+  margin: 0 0 0 5px;
+}
+
+
+
+div.emails-container .email-columns div.email div.email-configure {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+div.emails-container .email-columns div.email div.email-configure span {
+  display: block;
+  width: 4px;
+  height: 4px;
+  border: 50%;
+  background-color: var(--color-text-secondary);
+}
+
+div.statistic-smtp {
+  padding: 18px;
+  background-color: #fff;
+  border-radius: 12px;
+  margin: 10px 0 0 0;
+}
+
+div.statistic-smtp div.statistic-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 24px 0;
+  align-items: center;
+}
+
+div.statistic-smtp div.statistic-header div.statistic-title {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: .03em;
+  line-height: 24px;
+  margin: 0 0 0 5px;
+}
+
+
+
+div.statistic-smtp div.statistic-header div.statistic-input {
+  position: relative;
+  width: 500px;
+}
+
+div.statistic-smtp div.statistic-header div.statistic-input input {
+  width: 100%;
+  padding: 15px 16px 15px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-base-container);
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: .03em;
+  color: var(--color-text-secondary);
+  outline: none;
+}
+
+div.statistic-smtp div.statistic-header div.statistic-input input::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: .03em;
+  color: var(--color-text-secondary);
+}
+
+
+
+div.statistic-smtp div.statistic-header div.statistic-input span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 24px;
+
+}
+
+div.statistic-smtp div.statistic-header div.statistic-input span svg {}
+
+div.statistic-smtp div.statistic-header div.statistic-input span svg path {}
+
+
+table.smtp {
+  width: 100%;
+  display: block;
+  padding: 3px 0 0 0;
+}
+
+table.smtp thead {
+  display: block;  
+  width: 100%;
+  border-bottom: 1px solid #000B260D;
+  padding: 0 0 19px 0;
+}
+
+table.smtp thead tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+table.smtp thead tr th {
+  font-weight: 500;
+  font-size: 18px;
+  font-family: 'SF Pro Display', sans-serif;
+  letter-spacing: .3px;  
+}

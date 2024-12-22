@@ -1,0 +1,522 @@
+div.modal-wraper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  background-color: #00000030;
+}
+
+.modal-wraper.hidden {
+  display: none;
+}
+
+.modal {  
+  background: var(--color-white);
+  border-radius: 14px;
+  padding: 24px 24px 32px
+}
+
+div.modal-wraper div.modal>*+* {
+  margin-top: 24px
+}
+
+div.modal-wraper div.modal div.modal-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.64px;
+  letter-spacing: .01em;
+}
+
+div.modal-wraper div.modal div.modal-header.small {
+  font-size: 20px;
+  line-height: 23.87px;
+  letter-spacing: 0.03em;
+
+}
+
+
+div.modal-wraper div.modal div.modal-header svg {
+  width: 31.38px;
+  height: 31.38px
+}
+
+div.modal-wraper div.modal div.modal-content>*+* {
+  margin-top: 12px
+}
+
+div.modal-wraper div.modal div.modal-content.px20>*+* {
+  margin-top: 20px
+}
+
+div.modal-wraper div.modal div.modal-content div.modal-caul {
+  /* width: 100%; */
+  font-size: 16px;
+  letter-spacing: .03em;
+  padding: 12px 16px 16px;
+  background: var(--color-input);
+  border: 1px solid var(--color-text-gray-10);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column
+}
+
+div.modal-wraper div.modal div.modal-content div.modal-caul>*+* {
+  margin-top: 6px
+}
+
+div.modal-wraper div.modal div.modal-content div.modal-caul div.modal-caul-header {
+  font-weight: 500;
+  line-height: 19.2px;
+  color: var(--color-text-gray);
+  display: flex;
+  align-items: center
+}
+
+div.modal-wraper div.modal div.modal-content div.modal-caul div.modal-caul-header svg {
+  margin-right: 8px
+}
+
+div.modal-wraper div.modal div.modal-content div.modal-caul div.modal-caul-description {
+  font-weight: 400;
+  line-height: 19.09px;
+  color: var(--color-text-gray-80)
+}
+
+div.modal-wraper div.modal div.modal-content input[type=text],
+div.modal-wraper div.modal div.modal-content input[type=password] {  
+  height: 50px;
+  width: 100%;
+  padding: 0 16px;
+  border-radius: 8px;
+  background: var(--color-input);
+  border: 1px solid var(--color-text-gray-10);
+  font-weight: 400;
+  line-height: 19.09px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+div.modal-wraper div.modal div.modal-content input[type=text]::placeholder,
+div.modal-wraper div.modal div.modal-content input[type=password]::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.09px;
+  letter-spacing: .03em;
+  font-family: 'SF Pro Display';
+  color: var(--color-text-secondary)
+}
+
+div.modal-wraper div.modal div.modal-content input[type=radio] {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px
+}
+
+div.modal-wraper div.modal div.modal-content div.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.09px;
+  letter-spacing: .03em
+}
+
+div.modal-wraper div.modal div.modal-content div.form-group .icon-group {
+  position: relative
+}
+
+div.modal-wraper div.modal div.modal-content div.form-group .icon-group svg,
+div.modal-wraper div.modal div.modal-content div.form-group .icon-group span {
+  position: absolute;
+  margin-top: 0;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.icon-group svg,
+div.modal-wraper div.modal div.modal-content div.form-group .icon-group span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.09px;
+  letter-spacing: .03em;
+  color: var(--color-gray)
+}
+
+div.modal-wraper div.modal div.modal-content div.form-group>*+* {
+  margin-top: 8px
+}
+
+div.modal-wraper div.modal div.modal-content div.radio-group {
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0 12px; */
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.09px;
+  letter-spacing: .03em
+}
+
+div.modal-wraper div.modal div.modal-content div.radio-group label {
+  display: flex;
+  align-items: center;
+  color: var(--color-text-secondary)
+}
+
+div.modal-wraper div.modal div.modal-content input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid var(--color-text-primary);
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer
+}
+
+div.modal-wraper div.modal div.modal-content input[type="radio"]::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  background: var(--color-text-primary);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none
+}
+
+div.modal-wraper div.modal div.modal-content input[type="radio"]:checked::before {
+  display: block
+}
+
+div.modal-wraper div.modal div.modal-footer button {
+  border: none;
+  border-radius: 8px;  
+  cursor: pointer;  
+  font-family: 'SF Pro Display';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.09px;
+  letter-spacing: .03em;
+  padding: 12px 0 16px;
+  width: 100%;
+}
+
+div.modal-wraper div.modal div.modal-footer button.blue {
+  background: var(--color-text-primary);
+  color: var(--color-white)
+}
+
+div.modal-wraper div.modal div.modal-footer button.red {
+  background-color: var(--color-dark-red);
+  color: var(--color-white)
+}
+
+div.modal-wraper div.modal div.modal-footer button.gray {
+  background: var(--color-button-secondary);
+  color: var(--color-text-gray)
+}
+
+div.modal-wraper div.modal div.modal-footer button.black {
+  background: var(--color-dark);
+  color: var(--color-white)
+}
+
+div.modal-wraper div.modal div.modal-footer button.col1-4 {
+  flex: 0 0 23.88059701%
+}
+
+div.modal-wraper div.modal div.modal-footer button.col3-4 {
+  flex: 0 0 74.1293532%
+}
+
+div.modal-wraper div.modal div.modal-footer button.col1-5 {
+  flex: 0 0 18.011257%
+}
+
+div.modal-wraper div.modal div.modal-content .info-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  padding: 12px 16px;
+  background: var(--color-input);
+  border: 1px solid var(--color-text-gray-10);
+  gap: 10px
+}
+
+div.modal-wraper div.modal div.modal-content .info-block.switch {
+  height: 47px
+}
+
+div.modal-wraper div.modal div.modal-content .info-block .info-title,
+div.modal-wraper div.modal div.modal-content .info-block .info-value {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.09px;
+  letter-spacing: .03em
+}
+
+div.modal-wraper div.modal div.modal-content .info-block .info-title {
+  color: var(--color-dark)
+}
+
+div.modal-wraper div.modal div.modal-content .info-block .info-value {
+  color: var(--color-text-gray)
+}
+
+.info-row:last-child {
+  margin-bottom: 0
+}
+
+
+div.modal-wraper div.modal div.modal-content .payment-summary {
+  width: 100%;
+  border: 1px solid var(--color-text-gray-10);
+  border-radius: 12px;
+  padding: 12px;
+  background-color: var(--color-input)
+}
+
+div.modal-wraper div.modal div.modal-content .payment-summary .summary-title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.09px;
+  letter-spacing: .01em;
+  color: var(--color-text-secondary)
+}
+
+div.modal-wraper div.modal div.modal-content .payment-summary .summary-value {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.64px;
+  letter-spacing: .01em
+}
+
+div.modal-wraper div.modal div.modal-content .payment-summary div:last-child,
+.sender-data {
+  margin-top: 8px !important
+}
+
+div.modal-wraper div.modal div.modal-content .details-block {  
+  border: 1px solid var(--color-text-gray-10);
+  border-radius: 12px;
+  padding: 12px;
+  margin-top: 8px !important;
+  background-color: var(--color-input);
+  display: flex;
+  flex-direction: column;
+  gap: 9px
+}
+
+div.modal-wraper div.modal div.modal-content .details-block .detail-row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-text-gray-10);
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: .01em
+}
+
+div.modal-wraper div.modal div.modal-content .details-block .detail-row:last-child {
+  border: none;
+  padding-bottom: 0
+}
+
+div.modal-wraper div.modal div.modal-content .sender-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.09px;
+  letter-spacing: .01em
+}
+
+div.modal-wraper div.modal div.modal-content .dropdown {
+  position: relative;
+  font-family: SF Pro Display;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.09px;
+  letter-spacing: .03em
+}
+
+div.modal-wraper div.modal div.modal-content .dropdown .dropdown-selected {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-input);
+  border: 1px solid var(--color-text-gray-10);
+  border-radius: 8px;
+  padding: 13px 16px;
+  cursor: pointer;
+  user-select: none;
+  margin-top: 8px;
+  height: 50px
+}
+
+
+div.modal-wraper div.modal div.modal-content .dropdown .dropdown-selected .icon {
+  margin-right: 4px;
+  width: 24px
+}
+
+div.modal-wraper div.modal div.modal-content .dropdown .dropdown-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-white);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 5px;
+  display: none;
+  z-index: 1000;
+  box-shadow: 0 4px 6px #0000001a
+}
+
+div.modal-wraper div.modal div.modal-content .dropdown .dropdown-options .option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color .2s
+}
+
+div.modal-wraper div.modal div.modal-content .dropdown .dropdown-options .option:hover {
+  background-color: #f0f0f0
+}
+
+div.modal-wraper div.modal div.modal-content .dropdown .dropdown-options .option .icon {
+  width: 24px;
+  height: 24px
+}
+
+
+
+
+
+div.modal-wraper div.modal div.modal-header span,
+div.modal-wraper div.modal div.modal-content input[type="radio"]:checked+.radio-text {
+  color: var(--color-dark)
+}
+
+div.modal-wraper div.modal div.modal-header span span,
+div.modal-wraper div.modal div.modal-content label,
+.details-block .detail-value,
+.sender-data .sender-value {
+  color: var(--color-gray)
+}
+
+div.modal-wraper div.modal div.modal-content .form-row,
+div.modal-wraper div.modal-footer .button-container {
+  display: flex;
+  gap: 8px
+}
+
+div.modal-wraper div.modal div.modal-content .form-row .form-group {
+  width: 203px;
+}
+
+.button-container.beetwen {
+  justify-content: space-between;
+}
+
+.button-container.beetwen button {
+  width: auto !important;
+}
+
+.switch-container,
+.dropdown-selected-data {
+  display: flex;
+  align-items: center
+}
+
+.details-block .detail-label,
+.sender-data .sender-info {
+  color: var(--color-text-secondary)
+}
+
+
+.app-item {
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  background: var(--color-base-container);
+  border-radius: 12px;
+}
+
+.app-item .app-icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 12px;
+}
+
+
+.app-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-info,
+.install-button {
+  font-family: 'SF Pro Display';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.48px;
+  letter-spacing: 0.03em;
+}
+
+.app-info-col {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.app-label {
+  color: var(--color-dark);
+}
+
+.app-value {
+  color: var(--color-text-gray);
+}
+
+.install-button {
+  padding: 8px 20px 10px 20px;
+  background: var(--color-button-secondary);
+  color: var(--color-text-gray);
+  border: none;
+  border-radius: 8px;
+}
+
+.w500 {
+  width: 500px;
+  box-sizing: border-box;
+}
+
+.gray-text {
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--color-text-gray);
+  letter-spacing: .03em;
+  margin: 0 0 0 5px;
+}

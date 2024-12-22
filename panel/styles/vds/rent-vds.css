@@ -1,0 +1,385 @@
+div.tariff-container {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 12px;
+
+}
+
+div.tariff-container div.tariff-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 24px 0;
+}
+
+div.tariff-container div.tariff-header div.tariff-title {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: .3px;
+}
+
+
+
+div.tariff-container div.tariff-header div.tariff-configure {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: .5px;
+  color: var(--color-text-primary);
+  gap: 4px;
+}
+
+div.tariff-container div.tariff-header div.tariff-configure span {
+  display: flex;
+}
+
+
+div.tariff-container .tariff-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.vds-item {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-base-container);
+  justify-content: space-between;
+  padding: 6px 17px 6px 20px;
+  border-radius: 12px;
+}
+
+input[name="tariff"] {
+  width: 20px;
+  height: 20px;
+}
+
+
+.vds-item div.vds-region {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: .3px;
+  flex: 0 0 20%;
+}
+
+
+
+.vds-item div.vds-region div.vds-region-icon {
+  margin: 6px 8px 0 19px;
+
+}
+
+.vds-item div.vds-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  flex: 0 0 20%;
+}
+
+.vds-item div.vds-stats:last-child {
+  align-items: flex-end !important;
+}
+
+
+.vds-item div.vds-stats p {
+  font-weight: 500;
+}
+
+
+
+.vds-item div.vds-stats p:nth-child(1) {
+  font-size: 18px;
+  color: var(--color-dark);
+  font-weight: 500;
+  line-height: 21px;
+}
+
+
+
+.vds-item div.vds-stats p:nth-child(2) {
+  font-size: 16px;
+  color: var(--color-gray);
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.vds-item div.vds-rent-btn button {
+  border: none;
+  padding: 12px 20px;
+  background-color: var(--color-beige);
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--color-dark);
+  font-family: 'SF Pro Display', sans-serif;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+
+
+.vds-item div.vds-rent-btn button:hover {
+  background-color: var(--color-blue);
+  color: #fff;
+}
+
+div.os-container {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  margin: 40px 0 0 0;
+}
+
+div.os-container div.os-title {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: .3px;
+  margin: 0 0 28px 0;
+}
+
+
+
+div.os-container div.os-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+
+}
+
+div.os-container div.os-list div.os-item {
+  flex: 0 1 25%;
+  background-color: var(--color-base-container);
+  padding: 24px 20px;
+}
+
+div.os-container div.os-list div.os-item div.os-name {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: .8px;
+  gap: 13px;
+}
+
+div.os-container div.os-list div.os-item div.os-name span {}
+
+div.os-container div.os-list div.os-item div.os-name span svg {}
+
+
+
+div.os-container div.os-list div.os-item div.os-versions {
+  display: flex;
+  align-items: center;
+  margin: 13px 0 0 5px;
+  gap: 25px;
+}
+
+div.os-container div.os-list div.os-item div.os-versions label {
+  border: 1.5px solid var(--color-gray);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: .3px;
+
+}
+
+div.os-container div.os-list div.os-item div.os-versions label input[type="radio"] {
+  width: 20px;
+  height: 20px;
+}
+
+div.select-option-container {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  margin: 32px 0 0 0;
+}
+
+div.select-option-container div.select-option-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 10px 0;
+}
+
+div.select-option-container div.select-option-header div.select-option-title {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: .3px;
+  margin: 0 0 28px 0;
+}
+
+
+
+div.select-option-container div.select-option-header div.select-option-chevron {}
+
+div.select-option-container div.select-option-header div.select-option-chevron svg {}
+
+div.select-option-container div.select-option-header div.select-option-chevron svg path {}
+
+
+
+div.select-option-container div.select-option-body {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+div.select-option-container div.select-option-body div.select-option-item {
+  background-color: var(--color-base-container);
+  padding: 10px 5px 20px 26px;
+  flex: 0 1 50%;
+}
+
+div.select-option-container div.select-option-body div.select-option-item div.select-option-name {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: .3px;
+  margin: 0 0 15px 0;
+}
+
+div.select-option-container div.select-option-body div.select-option-item div.select-option-name span {
+  margin: 0 8px 0 0;
+}
+
+div.select-option-container div.select-option-body div.select-option-item div.select-option-name span svg {}
+
+div.select-option-container div.select-option-body div.select-option-item div.select-option-name span svg path {}
+
+
+
+div.select-option-container div.select-option-body div.select-option-item div.code-versions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  /* margin: 10px 0 0 0; */
+}
+
+div.select-option-container div.select-option-body div.select-option-item div.code-versions label {
+  padding: 5px 10px;
+  border: 1.5px solid #B7C7ED66;
+  border-radius: 20px;
+  gap: 12px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: .3px;
+  display: flex;
+  align-items: center;
+}
+
+div.select-option-container div.select-option-body div.select-option-item div.code-versions label input {
+  width: 20px;
+  height: 20px;
+}
+
+
+div.select-option-container div.select-option-body {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+div.select-option-container div.select-option-body div.select-option-item {
+  background-color: var(--color-base-container);
+  padding: 10px 5px 20px 26px;
+  flex: 0 1 50%;
+}
+
+div.select-option-container div.select-option-body div.select-option-item div.select-option-name {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: .3px;
+  margin: 0 0 15px 0;
+}
+
+div.select-option-container div.select-option-body div.select-option-item div.select-option-name span {
+  margin: 0 8px 0 0;
+}
+
+div.select-option-container div.select-option-body div.select-option-item div.select-option-name span svg {}
+
+div.select-option-container div.select-option-body div.select-option-item div.select-option-name span svg path {}
+
+
+
+div.select-option-container div.select-option-body div.select-option-item div.select-option-variants {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  /* margin: 10px 0 0 0; */
+}
+
+div.select-option-container div.select-option-body div.select-option-item div.select-option-variants label {
+  padding: 5px 10px;
+  border: 1.5px solid #B7C7ED66;
+  border-radius: 20px;
+  gap: 12px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: .3px;
+  display: flex;
+  align-items: center;
+}
+
+div.select-option-container div.select-option-body div.select-option-item div.select-option-variants label input {
+  width: 20px;
+  height: 20px;
+}
+
+
+div.total-container {
+  background-color: #fff;
+  border-radius: 12px;
+  margin: 24px 0 24px 0;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.total-container div.total-price {}
+
+div.total-container div.total-price div.total-price-title {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: .03em;
+  color: var(--color-text-dark-65);
+  margin: 0 0 4px 0;
+}
+
+
+
+div.total-container div.total-price div.total-price-text {
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: .03em;
+}
+
+
+
+div.total-container div.total-price-button {}
+
+div.total-container div.total-price-button button {
+  border: none;
+  padding: 16px 24px 20px 24px;
+  color: #fff;
+  background-color: var(--color-text-primary);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: 'SF Pro Display', sans-serif;
+  letter-spacing: .03em;
+}
