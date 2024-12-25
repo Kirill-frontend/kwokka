@@ -63,6 +63,7 @@ section.background-dark-gr div.container div.introduction-container div.introduc
   font-size: 20px;
   padding: 15px 30px;
   background-color: #fff;
+  letter-spacing: .03em;
 }
 
 
@@ -95,7 +96,7 @@ section div.container {}
 section div.container div.vds-catalog {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 4px;
   margin: 73px 0;
 }
 
@@ -171,13 +172,15 @@ section div.container {}
 
 section div.container div.vds-order {
   display: flex;
-  margin-bottom: 57px;
+  margin-bottom: 93px;
 }
 
 section div.container div.vds-order div.vds-order-texts {
   background-color: var(--color-dark);
   padding: 45px;
-  flex: 0 1 45%;
+  box-sizing: border-box;
+  height: 488px;
+  width: 720px;
 
 }
 
@@ -185,7 +188,7 @@ section div.container div.vds-order div.vds-order-texts div.vds-order-texts-titl
   color: #fff;
   font-weight: bold;
   font-size: 40px;
-  margin: 0 0 35px 0;
+  margin: 10px 0 35px 6px;
   max-width: 468px;
 }
 
@@ -194,8 +197,9 @@ section div.container div.vds-order div.vds-order-texts div.vds-order-texts-titl
 section div.container div.vds-order div.vds-order-texts div.vds-order-texts-description {
   color: #A6B3D1E5;
   font-size: 20px;
-  margin: 0 0 100px 0;
-  max-width: 479px;
+  margin: 0 0 100px 10px;
+  max-width: 481px;
+  line-height: 34px;
 }
 
 
@@ -220,19 +224,21 @@ section div.container div.vds-order div.vds-order-texts div.vds-order-texts-link
 
 
 section div.container div.vds-order div.vds-order-configure {
-  flex: 1 1 50%;
+  /* flex: 1 1 50%; */
+  width: 720px;
+  height: 488px;
   background-color: #fff;
 }
 
 section div.container div.vds-order div.vds-order-configure form {
-  padding: 50px;
+  padding: 56px 40px 50px 50px;
 }
 
 section div.container div.vds-order div.vds-order-configure form div.vds-order-form-title {
   font-weight: 600;
   font-size: 32px;
   color: var(--color-dark);
-  margin: 0 0 35px 0;
+  margin: 0 0 60px 0;
 }
 
 
@@ -245,7 +251,7 @@ section div.container div.vds-order div.vds-order-configure form div.vds-order-f
 
 section div.container div.vds-order div.vds-order-configure form div.vds-order-form-stats div.vds-order-form-stats-input {
   position: relative;
-  margin: 20px 0 0 0;
+  /* margin: 20px 0 0 0;   */
 }
 
 section div.container div.vds-order div.vds-order-configure form div.vds-order-form-stats div.vds-order-form-stats-input input {
@@ -254,6 +260,8 @@ section div.container div.vds-order div.vds-order-configure form div.vds-order-f
   background-color: var(--color-beige);
   padding: 15px;
   font-size: 16px;
+  width: 206px;
+  box-sizing: border-box;
 }
 
 section div.container div.vds-order div.vds-order-configure form div.vds-order-form-stats div.vds-order-form-stats-input input::after {}
@@ -262,7 +270,7 @@ section div.container div.vds-order div.vds-order-configure form div.vds-order-f
   position: absolute;
   top: 0;
   transform: translateY(-150%);
-  left: 0;
+  left: 6px;
   color: var(--color-price-gray);
 }
 
@@ -276,7 +284,7 @@ section div.container div.vds-order div.vds-order-configure form div.vds-order-f
 
 
 section div.container div.vds-order div.vds-order-configure form div.vds-order-form-os {
-  margin: 0 0 40px 0;
+  margin: 0 0 30px 0;
 }
 
 section div.container div.vds-order div.vds-order-configure form div.vds-order-form-os input#os-input {}
@@ -286,7 +294,7 @@ section div.container div.vds-order div.vds-order-configure form div.vds-order-f
 section div.container div.vds-order div.vds-order-configure form div.vds-order-form-os label {
   color: var(--color-price-gray);
   display: block;
-  margin: 12px 0 5px 0;
+  margin: 12px 0 5px 4px;
 }
 
 
@@ -432,7 +440,7 @@ section div.container div.vds-order div.vds-order-configure form div.vds-order-f
 }
 
 section div.container div.vds-order div.vds-order-configure form div.vds-order-form-final div.vds-order-form-price {
-  flex: 1 1 75%;
+  flex: 0 1 65%;
   display: flex;
   justify-content: space-between;
   padding: 20px;
@@ -452,7 +460,7 @@ section div.container div.vds-order div.vds-order-configure form div.vds-order-f
 
 
 section div.container div.vds-order div.vds-order-configure form div.vds-order-form-final div.vds-order-form-buy {
-  flex: 0 0 25%;
+  flex: 1 0 25%;
 }
 
 section div.container div.vds-order div.vds-order-configure form div.vds-order-form-final div.vds-order-form-buy button {

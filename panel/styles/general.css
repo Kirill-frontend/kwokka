@@ -272,7 +272,7 @@ header div.page-title {
   font-weight: 600;
   font-size: 24px;
   color: var(--color-dark);
-  letter-spacing: 0.4px;
+  letter-spacing: .03em;
 }
 
 header div.page-title span {
@@ -283,7 +283,7 @@ header div.page-title span {
 
 header div.header-interactions {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   align-items: center;
 }
 
@@ -319,16 +319,15 @@ header div.header-interactions .header-interactions-balance {
   align-items: center;
   padding: 10px 16px;
   background-color: var(--color-input);
-  border-radius: 8px;
-  margin: 0 27px 0 0;
+  border-radius: 8px;  
 }
 
-header div.header-interactions .header-interactions-balance div.header-interactions-balance-deposit {
-  padding: 2px 4px 2px 4px;
-  background-color: #020F3073;
+header div.header-interactions .header-interactions-balance div.header-interactions-balance-deposit {    
   border-radius: 50%;
   color: #fff;
-  margin: 0 2px 0 0;
+  margin: 0 8px 0 0;
+  width: 20px;
+  height: 20px;
 }
 
 
@@ -352,7 +351,7 @@ header div.header-interactions .header-interactions-balance span.header-interact
 
 
 header div.header-interactions div.header-interactions-account {
-  padding: 7px;
+  padding: 9px 11px;
   border-radius: 8px;
   background-color: var(--color-input);
   position: relative;
@@ -407,7 +406,7 @@ section.warning div.warning-button {
 
 section.warning div.warning-button .warning-btn {
   border: none;
-  padding: 10px 20px;
+  padding: 11px 20px;
   font-weight: 500;
   font-size: 18px;
   font-family: 'SF Pro Display', sans-serif;
@@ -436,11 +435,12 @@ section.warning div.warning-button .warning-btn:hover {
   cursor: pointer;
   text-indent: -9999px;
   width: 40px;
-  height: 20px;
-  background: grey;
+  height: 22px;
+  background: transparent;
   display: block;
   border-radius: 100px;
   position: relative;
+  border: 1.5px solid var(--color-text-gray);
 }
 
 .switch-container label:after {
@@ -450,13 +450,13 @@ section.warning div.warning-button .warning-btn:hover {
   left: 5px;
   width: 14px;
   height: 14px;
-  background: #fff;
+  background: grey;
   border-radius: 90px;
   transition: 0.3s;
 }
 
 .switch-container input:checked+label {
-  background: #bada55;
+  /* background: var(--color-text-primary); */
 }
 
 .switch-container input:checked+label:after {

@@ -116,7 +116,9 @@ section .service-container div.service-content div.service-background-image {
   opacity: .4;
 }
 
-section .service-container div.service-content div.service-background-image img {}
+section .service-container div.service-content div.service-background-image img {
+  max-width: 100%;
+}
 
 .service-item-server-status {
   color: #3CC87D;

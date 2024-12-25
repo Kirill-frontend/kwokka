@@ -17,7 +17,6 @@ section.background-blue div.container div.introduction-container {
 section.background-blue div.container div.introduction-container div.introduction-info-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   position: relative;
   z-index: 3;
 }
@@ -32,10 +31,10 @@ section.background-blue div.container div.introduction-container div.introductio
 
 section.background-blue div.container div.introduction-container div.introduction-info-container p:first-child {
   font-size: 24px;
-  margin: 0 0 10px 0;
+  margin: 148px 0 12px 0;
   text-transform: uppercase;
   padding: 20px 0 0 5px;
-  letter-spacing: 1px;
+  letter-spacing: .05em;
 
 }
 
@@ -44,7 +43,6 @@ section.background-blue div.container div.introduction-container div.introductio
   max-width: 720px;
   margin: 0 0 25px 0;
   text-transform: uppercase;
-  padding: 13px 0 0 6px;
   letter-spacing: 3px;
   line-height: 52px;
 
@@ -54,7 +52,8 @@ section.background-blue div.container div.introduction-container div.introductio
   font-size: 20px;
   max-width: 610px;
   margin: 0 0 20px 0;
-  padding: 10px 0 0 6px;
+
+  line-height: 26px;
 }
 
 
@@ -67,10 +66,10 @@ section.background-blue div.container div.introduction-container div.introductio
   color: var(--color-dark);
   font-weight: 500;
   font-size: 20px;
-  padding: 14px 28px;
+  padding: 12px 24px 16px 24px;
   background-color: #fff;
-  margin: 16px 0 0 3px;
-  letter-spacing: .4px;
+  margin: 31px 0 0 5px;
+  letter-spacing: .03em;
 }
 
 
@@ -117,15 +116,20 @@ section div.container div.tariffs-container {
   align-items: center;
   justify-content: space-between;
   margin: 0 0 0 9px;
+  gap: 10px;
 }
 
 section div.container div.tariffs-container div.tariff {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  margin: 80px 0 200px 0;
+  margin: 87px 0 200px 0;
   padding: 25px;
   width: 352px;
+}
+
+section div.container div.tariffs-container div.tariff.recommended {
+  border: 1px solid var(--color-blue)
 }
 
 section div.container div.tariffs-container div.tariff p.tariff-title {
@@ -160,7 +164,7 @@ section div.container div.tariffs-container div.tariff p.tariff-name {
 
 
 section div.container div.tariffs-container div.tariff div.resources-container {
-  margin: 20px 0 20px 0;
+  margin: 25px 0 20px 0;
   border-bottom: 1px solid var(--color-border);
   padding: 0 0 20px 0;
 }
@@ -176,7 +180,7 @@ section div.container div.tariffs-container div.tariff div.resources-container p
 section div.container div.tariffs-container div.tariff div.resources-container div.resource-item {
   display: flex;
   align-items: flex-start;
-  margin: 0 0 15px 0;
+  margin: 0 0 18px 0;
 
 }
 
@@ -216,7 +220,7 @@ section div.container div.tariffs-container div.tariff div.price-container {}
 section div.container div.tariffs-container div.tariff div.price-container p.price-info-text {
   font-weight: 500;
   color: var(--color-dark);
-  margin: 27px 0 10px 0px;
+  margin: 5px 0 16px 0px;
 }
 
 
@@ -280,10 +284,11 @@ section div.container div.tariffs-container div.tariff div.price-container div.t
   color: #fff;
   font-size: 18px;
   font-weight: 500;
-  padding: 15px 0;
+  padding: 17px 0px;
   cursor: pointer;
   transition: all .3s ease-in-out;
-  margin: 9px 0 0 7px;
+  margin: 6px 0 0 0px;
+
 }
 
 section div.container div.tariffs-container div.tariff div.price-container div.tariff-button button:hover {
@@ -314,13 +319,15 @@ section div.container div.benefits-container div.benefits-title-container div.be
   font-weight: 600;
   font-size: 20px;
   color: var(--color-dark);
-  margin: 7px 0 20px 8px;
-  letter-spacing: .4px;
+  margin: 0 0 20px 8px;
 }
 
 
 
-section div.container div.benefits-container div.benefits-title-container div.benefits-title-icon {}
+section div.container div.benefits-container div.benefits-title-container div.benefits-title-icon {
+  position: relative;
+  left: 10px;
+}
 
 
 section div.container div.benefits-container div.benefits-description-container {}
@@ -342,62 +349,63 @@ section div.container div.benefits-row:last-child {
   margin: 20px 0 42px 0;
 }
 
-section.background-black {
+.background-black {
   background-color: var(--color-dark);
 }
 
-section.background-black div.container {}
+.background-black {}
 
-section.background-black div.container div.banner-container {
+div.banner-container {
   position: relative;
-  min-height: 343px;
+  min-height: 350px;
   display: flex;
   flex-direction: column;
   padding: 54px 0 0 56px;
+  box-sizing: border-box;
 
 }
 
-section.background-black div.container div.banner-container div.banner-image {
+div.banner-container div.banner-image {
   position: absolute;
-  top: 0;
-  left: 100%;
+  top: 6px;
+  left: 97%;
   transform: translateX(-100%);
 }
 
-section.background-black div.container div.banner-container div.banner-image img {}
+div.banner-container div.banner-image img {}
 
 
 
-section.background-black div.container div.banner-container div.banner-info-container {}
+div.banner-container div.banner-info-container {}
 
-section.background-black div.container div.banner-container div.banner-info-container p.banner-info-title {
+div.banner-container div.banner-info-container p.banner-info-title {
   font-weight: bold;
   font-size: 36px;
   color: #fff;
   max-width: 547px;
   text-transform: uppercase;
-  line-height: 44px;
+  line-height: 50px;
   letter-spacing: .6px;
 }
 
 
 
-section.background-black div.container div.banner-container div.banner-info-container p.banner-info-description {
+div.banner-container div.banner-info-container p.banner-info-description {
   font-size: 20px;
   color: #A6B3D1;
   max-width: 681px;
-  margin: 10px 0 30px 0;
+  margin: 10px 0 50px 0;
   letter-spacing: 0.6px;
-  line-height: 33px;
+  line-height: 28px;
 }
 
 
 
-section.background-black div.container div.banner-container div.banner-info-container div.banner-button-container {
-  margin: 43px 0 0 1px;
+div.banner-container div.banner-info-container div.banner-button-container {
+  margin: 40px 0 0 1px;
 }
 
-section.background-black div.container div.banner-container div.banner-info-container div.banner-button-container a.banner-link {
+div.banner-container div.banner-info-container div.banner-button-container a.banner-link {
   border: none;
   text-decoration: 0;
   color: var(--color-dark);
@@ -405,7 +413,7 @@ section.background-black div.container div.banner-container div.banner-info-cont
   font-weight: 500;
   padding: 15px 25px;
   background-color: #fff;
-  letter-spacing: .4px;
+  letter-spacing: .03em;
 }
 
 section {}
@@ -413,13 +421,14 @@ section {}
 section div.container {}
 
 section div.container div.specification-container {
-  margin: 317px 0 463px 26px;
+  margin: 374px 0 308px 25px;
 }
 
 section div.container div.specification-container div.specification-item {
   display: flex;
   justify-content: space-between;
-  margin: 0 0 245px 0;
+  margin: 0 0 118px 0;
+
 }
 
 section div.container div.specification-container div.specification-item.reverse {
@@ -440,7 +449,10 @@ section div.container div.specification-container div.specification-item div.spe
   font-size: 32px;
   color: var(--color-dark);
   margin: 0 0 44px 0;
-  letter-spacing: .4px;
+
+  letter-spacing: 0.015em;
+
+
 }
 
 
@@ -508,11 +520,18 @@ section div.container div.specification-container div.specification-item div.spe
 
 
 section div.container div.specification-container div.specification-item div.specification-image {
-  flex: 0 0 600px;
+  flex: 0 0 732px;
   display: flex;
   justify-content: flex-end;
+  position: relative;
+  top: -20px;
 }
 
 section div.container div.specification-container div.specification-item div.specification-image img {
   max-width: 100%;
+  height: 692px;
+}
+
+.w548 {
+  max-width: 548px;
 }

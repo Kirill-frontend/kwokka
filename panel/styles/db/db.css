@@ -45,7 +45,7 @@ section.db-table-container div.db-table-header div.db-table-header-search {
 section.db-table-container div.db-table-header div.db-table-header-search input {
   width: 100%;
   box-sizing: border-box;
-  padding: 15.5px 16px;
+  padding: 0 16px;
   font-family: 'SF Pro Display', sans-serif;
   color: var(--color-text-secondary);
   letter-spacing: .03em;
@@ -53,6 +53,7 @@ section.db-table-container div.db-table-header div.db-table-header-search input 
   border-radius: 12px;
   font-size: 18px;
   outline: none;
+  height: 44px;
 }
 
 

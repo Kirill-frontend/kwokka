@@ -19,6 +19,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   background-color: var(--color-beige);
+  letter-spacing: .03em;
   /* justify-content: space-around; */
 }
 
@@ -330,6 +331,7 @@ header div.container div.top-header div.top-header-item {
 div.logo-container {
   display: flex;
   align-items: center;
+  margin: 0 0 0 6px;
 }
 
 div.logo-container div.logo-image {
@@ -356,7 +358,7 @@ header div.container div.top-header div.top-header-item div.aside-nav ul {
   padding: 0;
   display: flex;
   align-items: center;
-  padding-left: 70px;
+  padding-left: 60px;
   display: flex;
   gap: 51px;
 }
@@ -395,6 +397,7 @@ header div.container div.top-header div.top-header-item div.aside-nav ul li:last
 div.top-header-item div.language-select-container {
   display: flex;
   align-items: center;
+  margin: 0 14px 0 0;
 }
 
 div.top-header-item div.language-select-container select {
@@ -407,9 +410,10 @@ div.top-header-item div.language-select-container select {
 div.top-header-item div.language-select-container div.flag-icon {
   display: flex;
   align-items: center;
-  margin: 0 5px 0 0;
-  overflow: hidden;
+  margin: 0 5px 0 0;  
   border-radius: 50%;
+  width: 24px;
+  height: 24px;
 }
 
 
@@ -541,12 +545,12 @@ footer {
 
 footer div.footer-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
 footer div.footer-container div.footer-item {
-  padding: 50px 0;
+  padding: 56px 0 50px 8px;
 }
 
 footer div.footer-container div.footer-item div.logo-container {
@@ -559,6 +563,8 @@ footer div.footer-container div.footer-item div.footer-call p.footer-call-text {
   font-size: 14px;
   color: var(--color-gray);
   font-weight: 500;
+  margin: 0 0 18px 0;
+
 }
 
 footer div.footer-container div.footer-item div.footer-call p.footer-call-number {
@@ -567,7 +573,7 @@ footer div.footer-container div.footer-item div.footer-call p.footer-call-number
 }
 
 footer div.footer-container div.footer-item div.footer-social-container {
-  margin: 45px 0 30px 0;
+  margin: 45px 0 40px 0;
   display: flex;
   align-items: center;
 }
@@ -602,7 +608,9 @@ footer div.footer-container div.footer-item div.footer-copyright {
   max-width: 312px;
   color: var(--color-gray);
   font-weight: 500;
-  margin: 0 0 25px 0;
+  margin: 0 0 31px 0;
+  letter-spacing: .03em;
+  line-height: 20px;
 
 }
 
@@ -630,6 +638,7 @@ div.footer-links {
 
 div.footer-links ul.footer-links-list {
   list-style-type: none;
+  padding: 0 0 0 9px;
 }
 
 div.footer-links ul.footer-links-list li.footer-link-title {
@@ -651,7 +660,7 @@ div.footer-links ul.footer-links-list li:last-child {
 }
 
 .footer-item-links {
-  flex: 0 1 70%
+  flex: 0 1 865px;
 }
 
 
@@ -661,7 +670,7 @@ section div.container div.faq-container {
 
 section div.container div.faq-container div.faq-item {
   position: relative;
-  margin: 0 0 10px 0;
+  margin: 0 0 12px 0;
 }
 
 section div.container div.faq-container div.faq-item div.faq-question-container input {
@@ -701,9 +710,10 @@ section div.container div.faq-container div.faq-item div.faq-question-container 
   position: relative;
   align-items: center;
   justify-content: space-between;
-  padding: 25px;
+  padding: 24px;
   background-color: #fff;
-
+  box-sizing: border-box;
+  height: 73px
 }
 
 section div.container div.faq-container div.faq-item div.faq-question-container p.faq-question {
@@ -711,8 +721,9 @@ section div.container div.faq-container div.faq-item div.faq-question-container 
   font-size: 18px;
   color: var(--color-price-gray);
   transition: all .3s ease-in-out;
-  letter-spacing: .6px;
+  letter-spacing: .03em;
   padding: 0 0 0 7px;
+  line-height: 25px;
 }
 
 

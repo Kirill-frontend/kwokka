@@ -1,6 +1,8 @@
 div.feedback-form {
   padding: 40px;
   background-color: #fff;
+  width: 550px;
+  box-sizing: border-box;
 }
 
 div.feedback-form form {}

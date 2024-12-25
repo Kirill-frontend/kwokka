@@ -4,15 +4,19 @@ div.background-blue {
 
 div.background-dark {
   background-color: var(--color-dark);
-  flex: 0 0 49%;
+  flex: 0 0 716px;
   height: 277px;
 }
 
 div.background-orange {
   background-color: #F27A0B;
-  flex: 0 0 49%;
+  flex: 0 0 710px;
   height: 277px;
 
+}
+
+.banners-container {
+  margin-bottom: 203px;
 }
 
 .orange {
@@ -35,7 +39,7 @@ div.background-orange {
 
 div.banner-container {
   position: relative;
-  min-height: 343px;
+  min-height: 322px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -50,10 +54,10 @@ div.banner-container div.banner-image {
 
 div.banner-container div.banner-image.dark {
   position: absolute;
-  top: 21px;
-  left: 134%;
+  top: 38px;
+  left: 125%;
   transform: translateX(-100%);
-  height: 257px;
+  height: 239px;
   overflow: hidden;
 }
 
@@ -93,7 +97,7 @@ div.banner-container div.banner-info-container p.banner-info-title {
 div.banner-container div.banner-info-container p.banner-info-description {
   font-size: 20px;
   color: #fff;
-  max-width: 845px;
+  max-width: 780px;
   margin: 18px 0 48px 17px;
   line-height: 26px;
   letter-spacing: 1.3px;
@@ -101,9 +105,19 @@ div.banner-container div.banner-info-container p.banner-info-description {
 
 
 
-div.banner-container div.banner-info-container div.banner-button-container {
-  margin: 45px 0 0 18px;
+.background-orange .container div.banner-container div.banner-info-container div.banner-button-container {
+  margin: 30px 0 0 12px;
 }
+
+.background-dark div.banner-container div.banner-info-container div.banner-button-container {
+  margin: -15px 0 0 35px;
+}
+
+.background-blue .container div.banner-container div.banner-info-container div.banner-button-container {
+  margin: -17px 0 0 15px;
+}
+
+
 
 div.banner-container div.banner-info-container div.banner-button-container a.banner-link {
   border: none;
@@ -114,6 +128,7 @@ div.banner-container div.banner-info-container div.banner-button-container a.ban
   padding: 15px 25px;
   background-color: #fff;
   letter-spacing: .5px;
+  display: inline-block;
 }
 
 .banner-title {

@@ -67,11 +67,12 @@ section.domains-table div.domains-over-table div.domains-over-table-search {
 section.domains-table div.domains-over-table div.domains-over-table-search input {
   border: 2px solid #000B260D;
   border-radius: 15px;
-  padding: 16px 10.5px;
+  padding: 0 10.5px;
   width: 100%;
   font-size: 18px;
   color: var(--color-text-secondary);
   letter-spacing: .3px;
+  height: 44px;
 }
 
 
@@ -135,7 +136,10 @@ section.domains-table table.domains thead tr th {
   margin: 0 0 0 24px;
 }
 
-section.domains-table table.domains thead tr th input#select_all {}
+section.domains-table table.domains thead tr th input#select_all {
+  width: 18px;
+  height: 18px;
+}
 
 
 
@@ -166,4 +170,7 @@ section.domains-table table.domains tbody tr td.domains-item-first-col {
   margin: 0 !important;
 }
 
-section.domains-table table.domains tbody tr td input#domain_checkbox_1 {}
+section.domains-table table.domains tbody tr td input#domain_checkbox_1 {
+  width: 18px;
+  height: 18px;
+}

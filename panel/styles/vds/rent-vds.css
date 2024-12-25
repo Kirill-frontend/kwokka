@@ -194,6 +194,7 @@ div.os-container div.os-list div.os-item div.os-versions label {
 div.os-container div.os-list div.os-item div.os-versions label input[type="radio"] {
   width: 20px;
   height: 20px;
+  margin: 0 5px 0 0;
 }
 
 div.select-option-container {

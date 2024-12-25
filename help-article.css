@@ -32,7 +32,7 @@ section div.container div.help-tab-row div.help-tab-nav ul.help-tab-nav-articles
 
 section div.container div.help-tab-row div.help-tab-nav ul.help-tab-nav-articles li {
   font-size: 18px;
-  margin: 0px 0 19px 0;
+  margin: 0px 0 14px 0;
   color: var(--color-price-gray);
 }
 
@@ -44,7 +44,7 @@ section div.container div.help-tab-row div.help-tab-nav ul.help-tab-nav-articles
 
 section div.container div.help-tab-row div.help-tab-nav div.help-tab-article-title {
   font-weight: 500;
-  margin: 12px 0 12px 0;
+  margin: 28px 0 12px 0;
   font-size: 20px;
 }
 
@@ -85,10 +85,15 @@ section div.container div.help-tab-row div.help-tab-content div.help-tab-content
   color: var(--color-price-gray);
   font-size: 18px;
   margin: 0 0 25px 0;
+  padding: 5px 0 0 10px;
+  line-height: 26px;
+  letter-spacing: .03em;
 }
 
 
 
-section div.container div.help-tab-row div.help-tab-content div.help-tab-content div.help-tab-content-img {}
+section div.container div.help-tab-row div.help-tab-content div.help-tab-content div.help-tab-content-img {
+  padding: 0 0 0 10px;
+}
 
 section div.container div.help-tab-row div.help-tab-content div.help-tab-content div.help-tab-content-img img {}

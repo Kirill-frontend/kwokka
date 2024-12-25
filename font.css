@@ -30,6 +30,15 @@
   src: url('/fonts/SFPRODISPLAYMEDIUMITALIC.OTF') format('opentype');
 }
 
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/fonts/SF-Pro-Display-Semibold.otf') format('opentype');
+}
+
+
 /* SF Pro Display Bold */
 @font-face {
   font-family: 'SF Pro Display';

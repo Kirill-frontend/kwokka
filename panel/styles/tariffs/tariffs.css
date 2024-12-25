@@ -3,16 +3,17 @@ div.tariffs-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 24px;
 }
 
 div.tariffs-container div.tariff {
   display: flex;
   flex-direction: column;
   background-color: #fff;  
-  padding: 25px;
+  padding: 24px;
   width: 444px;
   box-sizing: border-box;
+  border-radius: 12px;
 }
 
 div.tariffs-container div.tariff p.tariff-title {
@@ -41,13 +42,12 @@ div.tariffs-container div.tariff p.tariff-name {
   color: var(--color-dark);
   font-size: 20px;
   border-bottom: 1px solid var(--color-border);
-  padding: 0 0 20px 0;
+  padding: 0 0 46px 0;
 }
 
 
 
-div.tariffs-container div.tariff div.resources-container {
-  margin: 20px 0 20px 0;
+div.tariffs-container div.tariff div.resources-container {  
   border-bottom: 1px solid var(--color-border);
   padding: 0 0 20px 0;
 }
@@ -63,7 +63,7 @@ div.tariffs-container div.tariff div.resources-container p.resources-title {
 div.tariffs-container div.tariff div.resources-container div.resource-item {
   display: flex;
   align-items: flex-start;
-  margin: 0 0 15px 0;
+  margin: 0 0 18px 0;
 
 }
 
@@ -103,7 +103,9 @@ div.tariffs-container div.tariff div.price-container {}
 div.tariffs-container div.tariff div.price-container p.price-info-text {
   font-weight: 500;
   color: var(--color-dark);
-  margin: 27px 0 10px 0px;
+  margin: 27px 0 11px 0px;
+  letter-spacing: .03em;
+  font-size: 16px;
 }
 
 
@@ -146,13 +148,15 @@ div.tariffs-container div.tariff div.price-container div.price-num div.price-det
   font-size: 20px;
   font-weight: 500;
   color: var(--color-dark);
+  letter-spacing: .03em;
 }
 
 
 
 div.tariffs-container div.tariff div.price-container div.price-saving {
-  margin: 5px 0 40px 0;
+  margin: 8px 0 40px 0;
   color: #000B2666;
+  letter-spacing: .03em;
 
 }
 
@@ -170,7 +174,8 @@ div.tariffs-container div.tariff div.price-container div.tariff-button button {
   padding: 15px 0;
   cursor: pointer;
   transition: all .3s ease-in-out;
-  margin: 9px 0 0 7px;
+  
+  border-radius: 12px;
 }
 
 div.tariffs-container div.tariff div.price-container div.tariff-button button:hover {

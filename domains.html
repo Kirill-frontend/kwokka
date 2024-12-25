@@ -189,7 +189,7 @@
       <div class="domain-container">
         <div class="domain-input-container">
           <div class="domain-input">
-            <input type="text" placeholder="Введите доменное имя">
+            <input type="text" placeholder="Введите доменное имя" value="my-domen">
             <div class="domain-input-search-input">
               <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -288,7 +288,7 @@
                 my-domen<span class="domain-holder-url-domain">.ru</span>
               </div>
               <div class="domain-holder-actions">
-                <div class="domain-holder-button">Недоступен</div>
+                <div class="domain-holder-button"> <button disabled>Недоступен</button></div>
               </div>
             </li>
             <li class="unavailable">
@@ -296,7 +296,7 @@
                 my-domen<span class="domain-holder-url-domain">.ru</span>
               </div>
               <div class="domain-holder-actions">
-                <div class="domain-holder-button">Недоступен</div>
+                <div class="domain-holder-button"> <button disabled>Недоступен</button></div>
               </div>
             </li>
             <li class="unavailable">
@@ -304,7 +304,9 @@
                 my-domen<span class="domain-holder-url-domain">.ru</span>
               </div>
               <div class="domain-holder-actions">
-                <div class="domain-holder-button">Недоступен</div>
+                <div class="domain-holder-button">
+                  <button disabled>Недоступен</button>
+                </div>
               </div>
             </li>
           </ul>
@@ -454,9 +456,9 @@
     </div>
   </section>
 
-  <section class="background-blue">
+  <section class="">
     <div class="container">
-      <div class="banner-container">
+      <div class="banner-container background-blue">
         <div class="banner-image">
           <img src="images/domain-banner.png" alt="">
         </div>

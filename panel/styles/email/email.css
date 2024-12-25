@@ -225,10 +225,10 @@ table.smtp {
 }
 
 table.smtp thead {
-  display: block;  
+  display: block;
   width: 100%;
   border-bottom: 1px solid #000B260D;
-  padding: 0 0 19px 0;
+  padding: 4px 0 19px 6px;
 }
 
 table.smtp thead tr {
@@ -242,5 +242,5 @@ table.smtp thead tr th {
   font-weight: 500;
   font-size: 18px;
   font-family: 'SF Pro Display', sans-serif;
-  letter-spacing: .3px;  
+  letter-spacing: .3px;
 }

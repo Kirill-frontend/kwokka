@@ -18,15 +18,23 @@ div.auth-form form div.auth-form-title {
 div.auth-form form div.auth-form-input {
   display: flex;
   flex-direction: column-reverse;
+  margin: 0 0 10px 0;
+}
+
+div.auth-form form div.auth-form-input:last-child {
+  margin: 0 0 6px 0!important;
 }
 
 
-div.auth-form form div.auth-form-input input {
+div.auth-form form div.auth-form-input input[type="email"], div.auth-form form div.auth-form-input input[type="password"] {
   background-color: var(--color-input);
   padding: 16px;
   border: 1px solid var(--color-border);
-  margin: 10px 0 10px 10px;
+  margin: 10px 0 0 10px;
+  font-size: 16px;
 }
+
+
 
 
 
@@ -44,6 +52,7 @@ div.auth-form form div.auth-form-input.checkbox {
   flex-direction: row!important;
   justify-content: space-between;
   align-items: center;
+  margin: 0 0 25px 0!important;
 }
 
 div.auth-form form div.auth-form-input.checkbox div.remember-checkbox {
@@ -51,7 +60,11 @@ div.auth-form form div.auth-form-input.checkbox div.remember-checkbox {
   align-items: center;
 }
 
-div.auth-form form div.auth-form-input.checkbox div.remember-checkbox input#remember {}
+div.auth-form form div.auth-form-input.checkbox div.remember-checkbox input#remember {
+  width: 15px;
+  height: 15px;
+  margin: 0 0 0 10px;
+}
 
 
 

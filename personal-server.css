@@ -57,18 +57,20 @@ section.background-blue div.container div.introduction-container div.introductio
 section.background-blue div.container div.introduction-container div.introduction-info-container div.introduction-button button {
   border: none;
   font-family: "SF Pro Display", sans-serif;
-
   color: var(--color-dark);
   font-weight: 500;
   font-size: 20px;
   padding: 15px 33px;
   background-color: #fff;
+  letter-spacing: .03em;
 }
 
 
 
 section.background-blue div.container div.introduction-container div.background_images {
   position: relative;
+  top: 45px;
+  left: -31px;
 }
 
 section.background-blue div.container div.introduction-container div.background_images div.globus-image {

@@ -46,10 +46,11 @@ section.background-orange div.container div.introduction-container div.introduct
 
 section.background-orange div.container div.introduction-container div.introduction-info-container p:nth-child(3) {
   font-size: 20px;
-  max-width: 610px;
-  margin: 0 0 53px 0;
-  letter-spacing: .4px;
+  max-width: 605px;
+  margin: 0 0 50px 5px;
+  letter-spacing: .03em;
   line-height: 23px;
+  font-weight: 400;
 }
 
 
@@ -63,8 +64,9 @@ section.background-orange div.container div.introduction-container div.introduct
   color: var(--color-dark);
   font-weight: 500;
   font-size: 20px;
-  padding: 12px 31px;
+  padding: 16px 26px;
   background-color: #fff;
+  letter-spacing: .03em;
 }
 
 
@@ -107,14 +109,14 @@ section.background-orange div.container div.introduction-container div.backgroun
 
 .background-blue {
   background-color: #3393FF;
-  margin: 0 0 132px 0;
+  margin: 0 0 145px 0;
 }
 
 
 
 div.banner-container {
   position: relative;
-  min-height: 343px;
+  min-height: 322px;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -123,7 +125,7 @@ div.banner-container {
 div.container div.banner-container div.banner-image {
   position: absolute;
   top: 0;
-  left: 100%;
+  left: 98%;
   transform: translateX(-100%);
 }
 
@@ -143,8 +145,9 @@ div.container div.banner-container div.banner-info-container p.banner-info-title
   color: #fff;
   max-width: 660px;
   text-transform: uppercase;
-  margin: 60px 0 0 0;
-  letter-spacing: 2px;
+  margin: 43px 0 0 6px;
+  line-height: 51px;
+  letter-spacing: .03em;
 }
 
 
@@ -152,9 +155,9 @@ div.container div.banner-container div.banner-info-container p.banner-info-title
 div.container div.banner-container div.banner-info-container p.banner-info-description {
   font-size: 20px;
   color: #fff;
-  max-width: 806px;
-  margin: 23px 0 52px 7px;
-  letter-spacing: .8px;
+  max-width: 800px;
+  margin: 13px 0 35px 7px;
+  letter-spacing: .03em;
   line-height: 24px;
 }
 
@@ -170,6 +173,10 @@ div.container div.banner-container div.banner-info-container div.banner-button-c
   font-weight: 500;
   padding: 15px 25px;
   background-color: #fff;
+  display: inline-block;
+  letter-spacing: .03em;
+  font-family: 'SF Pro Display', sans-serif;
+  margin: 0 0 0 5px;
 }
 
 
@@ -187,16 +194,20 @@ section div.container div.domain-container div.domain-input-container {}
 section div.container div.domain-container div.domain-input-container div.domain-input {
   display: flex;
   position: relative;
-  margin: 0 0 50px 0;
+  margin: 0 0 52px 0;
 
 }
 
 section div.container div.domain-container div.domain-input-container div.domain-input input {
   width: 100%;
-  padding: 16px 12px 12px 25px;
+  padding: 13px 12px 12px 32px;
   background-color: var(--color-beige);
   border: 1px solid #000B261A;
   color: var(--color-dark);
+  font-size: 20px;
+  letter-spacing: .03em;
+  font-family: 'SF Pro Display', sans-serif;
+
 }
 
 
@@ -219,15 +230,17 @@ section div.container div.domain-container div.domain-input-container div.domain
 section div.container div.domain-container div.domain-input-container ul.domain-holder {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
 }
 
 section div.container div.domain-container div.domain-input-container ul.domain-holder li {
-  padding: 12px 12px 12px 32px;
+  padding: 12px 10px 12px 33px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
+  box-sizing: border-box;
+  height: 69px;
 }
 
 section div.container div.domain-container div.domain-input-container ul.domain-holder li.unavailable {
@@ -265,7 +278,8 @@ section div.container div.domain-container div.domain-input-container ul.domain-
 section div.container div.domain-container div.domain-input-container ul.domain-holder li div.domain-holder-actions div.domain-holder-price {
   font-weight: 600;
   font-size: 20px;
-  color: var(--color-dark)
+  color: var(--color-dark);
+  margin: 4px 7px 0 0;
 }
 
 section div.container div.domain-container div.domain-input-container ul.domain-holder li div.domain-holder-actions div.domain-holder-price::after {
@@ -276,6 +290,7 @@ section div.container div.domain-container div.domain-input-container ul.domain-
   font-size: 20px;
   color: #000B264D;
   text-decoration: line-through;
+  margin: 0 10px 0 0;
 }
 
 section div.container div.domain-container div.domain-input-container ul.domain-holder li div.domain-holder-actions .domain-holder-old-price::after {
@@ -293,9 +308,15 @@ section div.container div.domain-container div.domain-input-container ul.domain-
   cursor: pointer;
 }
 
+
+
 section div.container div.domain-container div.domain-input-container ul.domain-holder li div.domain-holder-actions div.domain-holder-button button:hover {
   color: #fff;
   background-color: var(--color-blue);
+}
+
+section div.container div.domain-container div.domain-input-container ul.domain-holder li div.domain-holder-actions div.domain-holder-button button:disabled:hover {
+  cursor: not-allowed;
 }
 
 
@@ -303,7 +324,7 @@ section div.container div.domain-container div.domain-input-container ul.domain-
 section div.container div.domain-container div.domain-input-container div.domain-holder-more {
   display: flex;
   justify-content: center;
-  margin: 55px 0 60px 0;
+  margin: 10px 0 49px 0;
 }
 
 section div.container div.domain-container div.domain-input-container div.domain-holder-more button {
@@ -355,6 +376,7 @@ section div.container div.domain-catalog ul.domain-catalog-list li.domain-contai
   justify-content: space-between;
   flex: 1 1 24%;
   background-color: #fff;
+  margin: 0 0 10px 0;
 }
 
 section div.container div.domain-catalog ul.domain-catalog-list li.domain-container div.domain-col {
