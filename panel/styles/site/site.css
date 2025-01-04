@@ -96,23 +96,25 @@ section.search div.input-search-container span svg path {}
 section.sites {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 6px;
 }
 
 section.sites a.site {
   text-decoration: none;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
   border-radius: 12px;
   background-color: #fff;
-  padding: 18px 24px;
+  padding: 0 24px;
+  height: 83px;
 }
 
 section.sites a.site div.site-item-col {
   display: flex;
   flex-direction: column;
   /* align-items: center; */
+  margin: 15px 0 0 0;
 }
 
 section.sites a.site div.site-item-col div.site-item-title {
@@ -120,6 +122,7 @@ section.sites a.site div.site-item-col div.site-item-title {
   font-size: 18px;
   letter-spacing: .03em;
   color: var(--color-dark);
+  margin: 0 0 10px 0;
 }
 
 section.sites a.site div.site-item-col div.site-item-val {

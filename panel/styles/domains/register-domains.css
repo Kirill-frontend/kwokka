@@ -5,7 +5,8 @@ ul.domain-holder {
 }
 
 ul.domain-holder li {
-  padding: 25px 20px;
+  padding: 0 20px;
+  height: 69px;
   display: flex;
   justify-content: space-between;
   align-items: center;

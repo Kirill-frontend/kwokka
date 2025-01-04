@@ -509,11 +509,12 @@ section div.container div.specification-container div.specification-item div.spe
   border: none;
   background-color: #fff;
   color: var(--color-dark);
-  padding: 10px 25px;
+  padding: 10px 24px 16px 24px;
   font-size: 20px;
   font-weight: 500;
   margin: 50px 0 0 0;
   font-family: "SF Pro Display", sans-serif;
+  line-height: 28px;
 
 }
 

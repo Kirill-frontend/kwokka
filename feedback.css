@@ -11,7 +11,8 @@ div.feedback-form form div.feedback-form-title {
   font-weight: 600;
   font-size: 24px;
   color: var(--color-dark);
-  margin: 0 0 24px 0;
+  margin: 0 0 24px 7px;
+  letter-spacing: .01em;
 }
 
 
@@ -20,12 +21,13 @@ div.feedback-form form div.feedback-form-inputs-row {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin: 0 0 12px 0;
+  margin: 0 0 6px 0;
 }
 
 div.feedback-form form div.feedback-form-inputs-row div.feedback-form-input {
   display: flex;
   flex-direction: column;
+  padding: 0 0 0 8px;
 }
 
 div.feedback-form form div.feedback-form-inputs-row div.feedback-form-input input {
@@ -40,17 +42,19 @@ div.feedback-form form div.feedback-form-inputs-row div.feedback-form-input inpu
 div.feedback-form form div.feedback-form-inputs-row div.feedback-form-input label {
   font-size: 16px;
   margin: 0 0 10px 0;
+  letter-spacing: .03em;
   color: var(--color-price-gray)
 }
 
 div.feedback-form form div.feedback-form-input {
   display: flex;
   flex-direction: column;
+  padding: 0 0 0 8px;
 }
 
 div.feedback-form form div.feedback-form-input label {
   font-size: 16px;
-  margin: 10px 0 10px 0;
+  margin: 12px 0 10px 0;
   color: var(--color-price-gray)
 }
 
@@ -72,7 +76,9 @@ div.feedback-form form div.feedback-form-input textarea {
   font-weight: 400;
   font-size: 16px;
   font-family: 'SF Pro Displays', sans-serif;
-  min-height: 110px;
+  min-height: 143px;
+  width: 470px;
+  box-sizing: border-box;
 }
 
 
@@ -83,11 +89,20 @@ div.feedback-form form div.feedback-form-button {
 
 div.feedback-form form div.feedback-form-button button {
   width: 100%;
-  padding: 13.5px 0;
+  padding: 13.5px 0 16.5px 0;
   display: block;
   border: none;
   color: #fff;
   background-color: var(--color-dark);
   font-weight: 500;
   font-family: 'SF Pro Display', sans-serif;
+  font-size: 16px;
+  letter-spacing: .03em;
+  line-height: 21px;
+  margin: 0 0 0 9px;
+}
+
+#topic {
+  width: 470px;
+  box-sizing: border-box;
 }

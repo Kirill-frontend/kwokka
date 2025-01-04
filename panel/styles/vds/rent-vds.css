@@ -48,6 +48,7 @@ div.tariff-container .tariff-list {
   justify-content: space-between;
   padding: 6px 17px 6px 20px;
   border-radius: 12px;
+  height: 72px;
 }
 
 input[name="tariff"] {
@@ -131,7 +132,7 @@ div.os-container {
   background-color: #fff;
   padding: 24px;
   border-radius: 12px;
-  margin: 40px 0 0 0;
+  margin: 24px 0 0 0;
 }
 
 div.os-container div.os-title {
@@ -194,7 +195,7 @@ div.os-container div.os-list div.os-item div.os-versions label {
 div.os-container div.os-list div.os-item div.os-versions label input[type="radio"] {
   width: 20px;
   height: 20px;
-  margin: 0 5px 0 0;
+  margin: 0 8px 0 0;
 }
 
 div.select-option-container {

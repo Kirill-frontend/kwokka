@@ -397,7 +397,7 @@ header div.container div.top-header div.top-header-item div.aside-nav ul li:last
 div.top-header-item div.language-select-container {
   display: flex;
   align-items: center;
-  margin: 0 14px 0 0;
+  margin: 0 5px 0 0;
 }
 
 div.top-header-item div.language-select-container select {
@@ -1323,6 +1323,13 @@ div.footer-links ul.footer-links-list li.footer-link {
   section.background-blue div.container div.banner-container div.banner-image {
     /* transform: translateX(-75%)!important; */
     overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .vds-order {
+    flex-direction: column;
+    align-items: center;
   }
 }
 

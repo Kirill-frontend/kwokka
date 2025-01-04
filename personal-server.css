@@ -111,7 +111,7 @@ section div.container div.catalog-container div.catalog-filters {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  padding: 15px 25px;
+  padding: 15px 15px 15px 30px;
   margin: 80px 0 25px 0;
 }
 
@@ -127,7 +127,7 @@ section div.container div.catalog-container div.catalog-filters div.catalog-filt
 
 section div.container div.catalog-container div.catalog-filters div.catalog-filters-row div.catalog-filter select {
   border: none;
-  padding: 12px 40px 12px 12px;
+  padding: 12px 36px 12px 12px;
   font-weight: 500;
   font-size: 18px;
   color: var(--color-dark);
@@ -178,6 +178,8 @@ section div.container div.catalog-container div.catalog-servers div.catalog-serv
   font-weight: 500;
   font-size: 18px;
   color: var(--color-dark);
+  line-height: 21px;
+  padding: 0 0 2px 0;
 }
 
 section div.container div.catalog-container div.catalog-servers div.catalog-server div.catalog-server-col div.catalog-server-title svg {}
@@ -229,7 +231,9 @@ section div.container div.catalog-container div.catalog-more button {
   font-weight: 500;
   font-size: 18px;
   font-family: 'SF Pro Display';
-  padding: 13px 0;
+  padding: 12px 0;
+  margin: 16px 0 0 7px;
+  letter-spacing: .03em;
 }
 
 section div.container div.catalog-container div.catalog-more button:hover {
