@@ -149,6 +149,7 @@ li div.dropdown-list div.dropdown-list-title {
   justify-content: space-between;
   border-radius: 12px;
   transition: all .5s ease-in-out;
+  margin: 0 0 5px 0;
 
 }
 
@@ -202,6 +203,10 @@ li div.dropdown-list div.dropdown-list-content {
   max-height: 0px;
 
   overflow: hidden !important;
+}
+
+li div.dropdown-list div.dropdown-list-content a.selected {
+  background-color: var(--color-blue);
 }
 
 
